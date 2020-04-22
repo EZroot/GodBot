@@ -1,0 +1,30 @@
+05:07:20 [Info] Discord: Discord.Net v2.2.0 (API v6)
+05:07:31 [Verbose] Rest: GET voice/regions: 8596.16 ms
+05:07:38 [Verbose] Rest: GET users/@me: 115.23 ms
+05:07:38 [Info] Gateway: Connecting
+05:07:39 [Verbose] Rest: GET gateway: 59.92 ms
+05:07:41 [Info] Gateway: Connected
+05:07:41 [Verbose] Gateway: Connected to Real Life
+05:07:42 [Info] Gateway: Ready
+05:07:55 [Warning] Gateway: System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.String.StartsWith(String value, StringComparison comparisonType)
+   at Discord.Commands.MessageExtensions.HasStringPrefix(IUserMessage msg, String str, Int32& argPos, StringComparison comparisonType)
+   at AshBot.Services.CommandHandler.OnMessageReceivedAsync(SocketMessage s) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\CommandHandler.cs:line 42
+   at Discord.EventExtensions.InvokeAsync[T](AsyncEvent`1 eventHandler, T arg)
+   at Discord.WebSocket.DiscordSocketClient.TimeoutWrap(String name, Func`1 action)
+05:07:57 [Warning] Gateway: System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.String.StartsWith(String value, StringComparison comparisonType)
+   at Discord.Commands.MessageExtensions.HasStringPrefix(IUserMessage msg, String str, Int32& argPos, StringComparison comparisonType)
+   at AshBot.Services.CommandHandler.OnMessageReceivedAsync(SocketMessage s) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\CommandHandler.cs:line 42
+   at Discord.EventExtensions.InvokeAsync[T](AsyncEvent`1 eventHandler, T arg)
+   at Discord.WebSocket.DiscordSocketClient.TimeoutWrap(String name, Func`1 action)
+05:22:41 [Info] Discord: Discord.Net v2.2.0 (API v6)
+05:22:41 [Verbose] Rest: GET voice/regions: 516.36 ms
+05:22:41 [Verbose] Rest: GET users/@me: 104.52 ms
+05:22:42 [Info] Gateway: Connecting
+05:22:42 [Verbose] Rest: GET gateway: 51.29 ms
+05:22:42 [Info] Gateway: Connected
+05:22:43 [Verbose] Gateway: Connected to Real Life
+05:22:43 [Info] Gateway: Ready
+05:22:48 [Verbose] Rest: POST channels/640357094054297627/messages: 243.89 ms
+05:22:48 [Verbose] Command: Executed "say" for EZRoot#7559 in Real Life/all-chat

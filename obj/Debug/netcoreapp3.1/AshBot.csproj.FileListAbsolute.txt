@@ -18,3 +18,16 @@ C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\bin\Debug\netcoreapp3.1\Sys
 C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\obj\Debug\netcoreapp3.1\AshBot.csproj.CopyComplete
 C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\obj\Debug\netcoreapp3.1\AshBot.dll
 C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\obj\Debug\netcoreapp3.1\AshBot.pdb
+C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
