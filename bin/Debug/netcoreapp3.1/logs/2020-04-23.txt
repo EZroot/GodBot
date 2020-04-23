@@ -6,3 +6,110 @@
 09:42:18 [Info] Gateway: Connected
 09:42:18 [Verbose] Gateway: Connected to Real Life
 09:42:19 [Info] Gateway: Ready
+10:52:41 [Info] Discord: Discord.Net v2.2.0 (API v6)
+10:52:41 [Verbose] Rest: GET voice/regions: 545.08 ms
+10:52:42 [Verbose] Rest: GET users/@me: 132.88 ms
+10:52:42 [Info] Gateway: Connecting
+10:52:42 [Verbose] Rest: GET gateway: 60.39 ms
+10:52:43 [Info] Gateway: Connected
+10:52:43 [Verbose] Gateway: Connected to Real Life
+10:52:43 [Info] Gateway: Ready
+10:53:31 [Warning] Gateway: System.NullReferenceException: Object reference not set to an instance of an object.
+   at AshBot.Services.JudgementService.OnJudgeAsync(SocketMessage msg) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\JudgementService.cs:line 48
+   at Discord.EventExtensions.InvokeAsync[T](AsyncEvent`1 eventHandler, T arg)
+   at Discord.WebSocket.DiscordSocketClient.TimeoutWrap(String name, Func`1 action)
+10:56:29 [Info] Discord: Discord.Net v2.2.0 (API v6)
+10:56:30 [Verbose] Rest: GET voice/regions: 569.78 ms
+10:56:30 [Verbose] Rest: GET users/@me: 152.18 ms
+10:56:30 [Info] Gateway: Connecting
+10:56:30 [Verbose] Rest: GET gateway: 55.23 ms
+10:56:31 [Info] Gateway: Connected
+10:56:31 [Verbose] Gateway: Connected to Real Life
+10:56:32 [Info] Gateway: Ready
+10:56:49 [Warning] Gateway: System.NullReferenceException: Object reference not set to an instance of an object.
+   at AshBot.Services.JudgementService.OnJudgeAsync(SocketMessage msg) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\JudgementService.cs:line 48
+   at Discord.EventExtensions.InvokeAsync[T](AsyncEvent`1 eventHandler, T arg)
+   at Discord.WebSocket.DiscordSocketClient.TimeoutWrap(String name, Func`1 action)
+10:59:02 [Info] Discord: Discord.Net v2.2.0 (API v6)
+10:59:02 [Verbose] Rest: GET voice/regions: 502.84 ms
+10:59:03 [Verbose] Rest: GET users/@me: 119.71 ms
+10:59:03 [Info] Gateway: Connecting
+10:59:03 [Verbose] Rest: GET gateway: 49.71 ms
+10:59:04 [Info] Gateway: Connected
+10:59:04 [Verbose] Gateway: Connected to Real Life
+10:59:04 [Info] Gateway: Ready
+10:59:10 [Warning] Gateway: System.NullReferenceException: Object reference not set to an instance of an object.
+   at AshBot.Services.JudgementService.OnJudgeAsync(SocketMessage msg) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\JudgementService.cs:line 48
+   at Discord.EventExtensions.InvokeAsync[T](AsyncEvent`1 eventHandler, T arg)
+   at Discord.WebSocket.DiscordSocketClient.TimeoutWrap(String name, Func`1 action)
+10:59:44 [Info] Discord: Discord.Net v2.2.0 (API v6)
+10:59:45 [Verbose] Rest: GET voice/regions: 525.96 ms
+10:59:45 [Verbose] Rest: GET users/@me: 140.84 ms
+10:59:45 [Info] Gateway: Connecting
+10:59:45 [Verbose] Rest: GET gateway: 48.39 ms
+10:59:46 [Info] Gateway: Connected
+10:59:46 [Verbose] Gateway: Connected to Real Life
+10:59:46 [Info] Gateway: Ready
+11:14:34 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:14:35 [Verbose] Rest: GET voice/regions: 537.86 ms
+11:14:35 [Verbose] Rest: GET users/@me: 96.38 ms
+11:14:35 [Info] Gateway: Connecting
+11:14:35 [Verbose] Rest: GET gateway: 48.01 ms
+11:14:36 [Info] Gateway: Connected
+11:14:36 [Verbose] Gateway: Connected to Real Life
+11:14:37 [Info] Gateway: Ready
+11:23:44 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:23:44 [Verbose] Rest: GET voice/regions: 554.26 ms
+11:23:45 [Verbose] Rest: GET users/@me: 128.35 ms
+11:23:45 [Info] Gateway: Connecting
+11:23:45 [Verbose] Rest: GET gateway: 48.13 ms
+11:23:45 [Info] Gateway: Connected
+11:23:46 [Info] Gateway: Ready
+11:29:03 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:29:04 [Verbose] Rest: GET voice/regions: 540.72 ms
+11:29:04 [Verbose] Rest: GET users/@me: 99.23 ms
+11:29:04 [Info] Gateway: Connecting
+11:29:04 [Verbose] Rest: GET gateway: 47.38 ms
+11:29:05 [Info] Gateway: Connected
+11:29:05 [Verbose] Gateway: Connected to Real Life
+11:29:05 [Info] Gateway: Ready
+11:37:21 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:37:22 [Verbose] Rest: GET voice/regions: 1021.27 ms
+11:37:23 [Verbose] Rest: GET users/@me: 101.2 ms
+11:37:23 [Info] Gateway: Connecting
+11:37:23 [Verbose] Rest: GET gateway: 54.3 ms
+11:37:24 [Info] Gateway: Connected
+11:37:24 [Verbose] Gateway: Connected to Real Life
+11:37:25 [Info] Gateway: Ready
+11:41:15 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:41:15 [Verbose] Rest: GET voice/regions: 538.86 ms
+11:41:16 [Verbose] Rest: GET users/@me: 122.16 ms
+11:41:16 [Info] Gateway: Connecting
+11:41:16 [Verbose] Rest: GET gateway: 53.03 ms
+11:41:17 [Info] Gateway: Connected
+11:41:17 [Verbose] Gateway: Connected to Real Life
+11:41:17 [Info] Gateway: Ready
+11:42:49 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:42:50 [Verbose] Rest: GET voice/regions: 557.3 ms
+11:42:50 [Verbose] Rest: GET users/@me: 126.59 ms
+11:42:50 [Info] Gateway: Connecting
+11:42:50 [Verbose] Rest: GET gateway: 59.44 ms
+11:42:51 [Info] Gateway: Connected
+11:42:51 [Verbose] Gateway: Connected to Real Life
+11:42:51 [Info] Gateway: Ready
+11:43:20 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:43:20 [Verbose] Rest: GET voice/regions: 541.87 ms
+11:43:21 [Verbose] Rest: GET users/@me: 119.21 ms
+11:43:21 [Info] Gateway: Connecting
+11:43:21 [Verbose] Rest: GET gateway: 50.26 ms
+11:43:21 [Info] Gateway: Connected
+11:43:22 [Verbose] Gateway: Connected to Real Life
+11:43:22 [Info] Gateway: Ready
+11:47:04 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:47:04 [Verbose] Rest: GET voice/regions: 502.46 ms
+11:47:04 [Verbose] Rest: GET users/@me: 119.91 ms
+11:47:04 [Info] Gateway: Connecting
+11:47:05 [Verbose] Rest: GET gateway: 52.62 ms
+11:47:05 [Info] Gateway: Connected
+11:47:06 [Verbose] Gateway: Connected to Real Life
+11:47:06 [Info] Gateway: Ready
