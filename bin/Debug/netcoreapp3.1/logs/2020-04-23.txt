@@ -1,0 +1,8 @@
+09:42:12 [Info] Discord: Discord.Net v2.2.0 (API v6)
+09:42:15 [Verbose] Rest: GET voice/regions: 1896.83 ms
+09:42:17 [Verbose] Rest: GET users/@me: 178.55 ms
+09:42:17 [Info] Gateway: Connecting
+09:42:17 [Verbose] Rest: GET gateway: 82.43 ms
+09:42:18 [Info] Gateway: Connected
+09:42:18 [Verbose] Gateway: Connected to Real Life
+09:42:19 [Info] Gateway: Ready
