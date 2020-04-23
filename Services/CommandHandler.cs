@@ -28,8 +28,10 @@ namespace AshBot.Services
             _provider = provider;
 
             _discord.MessageReceived += OnMessageReceivedAsync;
+            _discord.UserJoined += AnnounceJoinedUser;
         }
 
+        //On each recieved message
         private async Task OnMessageReceivedAsync(SocketMessage s)
         {
             var msg = s as SocketUserMessage;     // Ensure the message is from a user/bot
@@ -46,6 +48,13 @@ namespace AshBot.Services
                 if (!result.IsSuccess)     // If not successful, reply with the error.
                     await context.Channel.SendMessageAsync(result.ToString());
             }
+        }
+
+        //Call out the joined user
+        public async Task AnnounceJoinedUser(SocketGuildUser user)
+        {
+            var channel = _discord.GetChannel(640357094054297627) as SocketTextChannel; //gets channel to send message in
+            await channel.SendMessageAsync("Welcome " + user.Mention + "!"); //Welcomes the new user
         }
     }
 }

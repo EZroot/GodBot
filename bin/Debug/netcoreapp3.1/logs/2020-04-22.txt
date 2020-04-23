@@ -28,3 +28,11 @@
 05:22:43 [Info] Gateway: Ready
 05:22:48 [Verbose] Rest: POST channels/640357094054297627/messages: 243.89 ms
 05:22:48 [Verbose] Command: Executed "say" for EZRoot#7559 in Real Life/all-chat
+05:33:08 [Info] Discord: Discord.Net v2.2.0 (API v6)
+05:33:08 [Verbose] Rest: GET voice/regions: 587.23 ms
+05:33:09 [Verbose] Rest: GET users/@me: 114.52 ms
+05:33:09 [Info] Gateway: Connecting
+05:33:09 [Verbose] Rest: GET gateway: 57.15 ms
+05:33:10 [Info] Gateway: Connected
+05:33:10 [Verbose] Gateway: Connected to Real Life
+05:33:10 [Info] Gateway: Ready

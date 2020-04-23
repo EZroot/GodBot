@@ -33,6 +33,5 @@ namespace AshBot.Modules
         [Command("ban")]
         public Task BanAsync(IGuildUser user) =>
             Context.Guild.AddBanAsync(user);
-
     }
 }
