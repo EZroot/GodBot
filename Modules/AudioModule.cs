@@ -32,6 +32,15 @@ namespace AshBot.Modules
         // Remember to add preconditions to your commands,
         // this is merely the minimal amount necessary.
         // Adding more commands of your own is also encouraged.
+        [Command("stop", RunMode = RunMode.Async)]
+        public async Task StopCmd()
+        {
+            await _service.LeaveAudio(Context.Guild);
+        }
+
+        // Remember to add preconditions to your commands,
+        // this is merely the minimal amount necessary.
+        // Adding more commands of your own is also encouraged.
         [Command("leave", RunMode = RunMode.Async)]
         public async Task LeaveCmd()
         {
@@ -41,6 +50,7 @@ namespace AshBot.Modules
         [Command("play", RunMode = RunMode.Async)]
         public async Task PlayCmd([Remainder] string song)
         {
+            await JoinCmd();
             await _service.SendAudioAsync(Context.Guild, Context.Channel, song);
         }
     }

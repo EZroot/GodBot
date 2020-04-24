@@ -599,3 +599,215 @@
 09:08:48 [Warning] Audio #1: Unknown OpCode (Hello)
 09:08:48 [Info] Audio #1: Connected
 09:08:48 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+09:15:11 [Info] Discord: Discord.Net v2.2.0 (API v6)
+09:15:12 [Verbose] Rest: GET voice/regions: 631.18 ms
+09:15:12 [Verbose] Rest: GET users/@me: 161.56 ms
+09:15:12 [Info] Gateway: Connecting
+09:15:12 [Verbose] Rest: GET gateway: 55.87 ms
+09:15:13 [Info] Gateway: Connected
+09:15:13 [Verbose] Gateway: Connected to Real Life
+09:15:13 [Info] Gateway: Ready
+09:15:20 [Info] Audio #1: Connecting
+09:15:21 [Warning] Audio #1: Unknown OpCode (Hello)
+09:15:21 [Info] Audio #1: Connected
+09:15:21 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+09:15:22 [Verbose] Rest: POST channels/703058789506482309/messages: 188.27 ms
+09:15:22 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+09:15:25 [Verbose] Rest: POST channels/703058789506482309/messages: 144.66 ms
+09:15:25 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+09:15:50 [Info] Discord: Discord.Net v2.2.0 (API v6)
+09:15:50 [Verbose] Rest: GET voice/regions: 493.63 ms
+09:15:50 [Verbose] Rest: GET users/@me: 97.88 ms
+09:15:50 [Info] Gateway: Connecting
+09:15:51 [Verbose] Rest: GET gateway: 52.31 ms
+09:15:51 [Info] Gateway: Connected
+09:15:51 [Verbose] Gateway: Connected to Real Life
+09:15:52 [Info] Gateway: Ready
+09:15:55 [Info] Audio #1: Connecting
+09:15:55 [Warning] Audio #1: Unknown OpCode (Hello)
+09:15:56 [Info] Audio #1: Connected
+09:15:56 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+09:15:57 [Verbose] Rest: POST channels/703058789506482309/messages: 162.14 ms
+09:15:57 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+09:16:17 [Info] Discord: Discord.Net v2.2.0 (API v6)
+09:16:18 [Verbose] Rest: GET voice/regions: 480.45 ms
+09:16:18 [Verbose] Rest: GET users/@me: 142.41 ms
+09:16:18 [Info] Gateway: Connecting
+09:16:18 [Verbose] Rest: GET gateway: 62.3 ms
+09:16:19 [Info] Gateway: Connected
+09:16:19 [Verbose] Gateway: Connected to Real Life
+09:16:19 [Info] Gateway: Ready
+09:16:23 [Info] Audio #1: Connecting
+09:16:23 [Warning] Audio #1: Unknown OpCode (Hello)
+09:16:24 [Info] Audio #1: Connected
+09:16:24 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+09:16:24 [Verbose] Rest: POST channels/703058789506482309/messages: 138.65 ms
+09:16:24 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+09:18:25 [Info] Discord: Discord.Net v2.2.0 (API v6)
+09:18:25 [Verbose] Rest: GET voice/regions: 433.33 ms
+09:18:26 [Verbose] Rest: GET users/@me: 156.93 ms
+09:18:26 [Info] Gateway: Connecting
+09:18:26 [Verbose] Rest: GET gateway: 58.06 ms
+09:18:27 [Info] Gateway: Connected
+09:18:27 [Verbose] Gateway: Connected to Real Life
+09:18:27 [Info] Gateway: Ready
+09:18:31 [Info] Audio #1: Connecting
+09:18:31 [Warning] Audio #1: Unknown OpCode (Hello)
+09:18:32 [Info] Audio #1: Connected
+09:18:32 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+09:18:32 [Verbose] Rest: POST channels/703058789506482309/messages: 185.55 ms
+09:18:32 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+09:20:12 [Info] Discord: Discord.Net v2.2.0 (API v6)
+09:20:13 [Verbose] Rest: GET voice/regions: 492.5 ms
+09:20:13 [Verbose] Rest: GET users/@me: 97.62 ms
+09:20:13 [Info] Gateway: Connecting
+09:20:13 [Verbose] Rest: GET gateway: 47.83 ms
+09:20:13 [Info] Gateway: Connected
+09:20:14 [Verbose] Gateway: Connected to Real Life
+09:20:14 [Info] Gateway: Ready
+09:20:17 [Info] Audio #1: Connecting
+09:20:17 [Warning] Audio #1: Unknown OpCode (Hello)
+09:20:18 [Info] Audio #1: Connected
+09:20:18 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+09:20:18 [Verbose] Rest: POST channels/703058789506482309/messages: 235.97 ms
+09:20:18 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+09:20:40 [Info] Discord: Discord.Net v2.2.0 (API v6)
+09:20:41 [Verbose] Rest: GET voice/regions: 498.99 ms
+09:20:41 [Verbose] Rest: GET users/@me: 102.9 ms
+09:20:41 [Info] Gateway: Connecting
+09:20:41 [Verbose] Rest: GET gateway: 55.5 ms
+09:20:42 [Info] Gateway: Connected
+09:20:42 [Verbose] Gateway: Connected to Real Life
+09:20:42 [Info] Gateway: Ready
+09:20:43 [Info] Audio #1: Connecting
+09:20:44 [Warning] Audio #1: Unknown OpCode (Hello)
+09:20:44 [Info] Audio #1: Connected
+09:20:44 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+09:20:49 [Verbose] Rest: POST channels/703058789506482309/messages: 139.86 ms
+09:20:49 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+09:25:11 [Info] Discord: Discord.Net v2.2.0 (API v6)
+09:25:12 [Verbose] Rest: GET voice/regions: 569.47 ms
+09:25:12 [Verbose] Rest: GET users/@me: 115.79 ms
+09:25:12 [Info] Gateway: Connecting
+09:25:12 [Verbose] Rest: GET gateway: 72.41 ms
+09:25:13 [Info] Gateway: Connected
+09:25:13 [Verbose] Gateway: Connected to Real Life
+09:25:14 [Info] Gateway: Ready
+09:25:18 [Info] Audio #1: Connecting
+09:25:18 [Warning] Audio #1: Unknown OpCode (Hello)
+09:25:18 [Info] Audio #1: Connected
+09:25:18 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+09:25:28 [Info] Audio #1: Disconnecting
+09:25:28 [Verbose] Command: Executed "stop" for EZRoot#7559 in Real Life/asdasd
+09:25:29 [Info] Audio #1: Disconnected
+09:26:44 [Info] Discord: Discord.Net v2.2.0 (API v6)
+09:26:44 [Verbose] Rest: GET voice/regions: 553.04 ms
+09:26:44 [Verbose] Rest: GET users/@me: 104.09 ms
+09:26:45 [Info] Gateway: Connecting
+09:26:45 [Verbose] Rest: GET gateway: 53.87 ms
+09:26:45 [Info] Gateway: Connected
+09:26:45 [Verbose] Gateway: Connected to Real Life
+09:26:46 [Info] Gateway: Ready
+09:26:50 [Verbose] Rest: POST channels/703058789506482309/messages: 742.07 ms
+09:26:50 [Verbose] Command: Executed "help" for EZRoot#7559 in Real Life/asdasd
+10:33:20 [Info] Discord: Discord.Net v2.2.0 (API v6)
+10:33:20 [Verbose] Rest: GET voice/regions: 551.45 ms
+10:33:20 [Verbose] Rest: GET users/@me: 102.75 ms
+10:33:20 [Info] Gateway: Connecting
+10:33:20 [Verbose] Rest: GET gateway: 52.98 ms
+10:33:21 [Info] Gateway: Connected
+10:33:21 [Verbose] Gateway: Connected to Real Life
+10:33:22 [Info] Gateway: Ready
+10:33:23 [Verbose] Rest: POST channels/703058789506482309/messages: 154.09 ms
+10:33:24 [Verbose] Command: Executed "help" for EZRoot#7559 in Real Life/asdasd
+10:36:06 [Info] Discord: Discord.Net v2.2.0 (API v6)
+10:36:07 [Verbose] Rest: GET voice/regions: 510.55 ms
+10:36:07 [Verbose] Rest: GET users/@me: 162.96 ms
+10:36:07 [Info] Gateway: Connecting
+10:36:07 [Verbose] Rest: GET gateway: 53.88 ms
+10:36:08 [Info] Gateway: Connected
+10:36:08 [Verbose] Gateway: Connected to Real Life
+10:36:08 [Info] Gateway: Ready
+10:36:30 [Verbose] Rest: POST channels/703058789506482309/messages: 148.34 ms
+10:36:30 [Verbose] Command: Executed "help" for EZRoot#7559 in Real Life/asdasd
+10:43:31 [Info] Discord: Discord.Net v2.2.0 (API v6)
+10:43:31 [Verbose] Rest: GET voice/regions: 595.16 ms
+10:43:32 [Verbose] Rest: GET users/@me: 187.44 ms
+10:43:32 [Info] Gateway: Connecting
+10:43:32 [Verbose] Rest: GET gateway: 63.24 ms
+10:43:32 [Info] Gateway: Connected
+10:43:32 [Verbose] Gateway: Connected to Real Life
+10:43:33 [Info] Gateway: Ready
+10:43:38 [Error] Command: Discord.Commands.CommandException: Error occurred executing "help" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'Content')
+   at Discord.Preconditions.NotNullOrEmpty(String obj, String name, String msg)
+   at Discord.API.DiscordRestApiClient.CreateMessageAsync(UInt64 channelId, CreateMessageParams args, RequestOptions options)
+   at Discord.Rest.ChannelHelper.SendMessageAsync(IMessageChannel channel, BaseDiscordClient client, String text, Boolean isTTS, Embed embed, RequestOptions options)
+   at Discord.WebSocket.SocketTextChannel.Discord.IMessageChannel.SendMessageAsync(String text, Boolean isTTS, Embed embed, RequestOptions options)
+   at Discord.Commands.ModuleBase`1.ReplyAsync(String message, Boolean isTTS, Embed embed, RequestOptions options)
+   at AshBot.Modules.InfoModule.SayHelp() in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\InfoModule.cs:line 32
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+10:43:38 [Verbose] Command: Executed "help" for EZRoot#7559 in Real Life/asdasd
+10:43:57 [Info] Discord: Discord.Net v2.2.0 (API v6)
+10:43:58 [Verbose] Rest: GET voice/regions: 525.9 ms
+10:43:58 [Verbose] Rest: GET users/@me: 118.28 ms
+10:43:58 [Info] Gateway: Connecting
+10:43:58 [Verbose] Rest: GET gateway: 47.74 ms
+10:43:59 [Info] Gateway: Connected
+10:43:59 [Verbose] Gateway: Connected to Real Life
+10:43:59 [Info] Gateway: Ready
+10:44:00 [Verbose] Rest: POST channels/703058789506482309/messages: 182.85 ms
+10:44:00 [Verbose] Command: Executed "help" for EZRoot#7559 in Real Life/asdasd
+10:46:23 [Info] Discord: Discord.Net v2.2.0 (API v6)
+10:46:23 [Verbose] Rest: GET voice/regions: 568.28 ms
+10:46:23 [Verbose] Rest: GET users/@me: 97.98 ms
+10:46:23 [Info] Gateway: Connecting
+10:46:23 [Verbose] Rest: GET gateway: 51.88 ms
+10:46:24 [Info] Gateway: Connected
+10:46:24 [Verbose] Gateway: Connected to Real Life
+10:46:25 [Info] Gateway: Ready
+10:46:26 [Verbose] Rest: POST channels/703058789506482309/messages: 181.79 ms
+10:46:26 [Verbose] Command: Executed "help" for EZRoot#7559 in Real Life/asdasd
+10:47:23 [Info] Discord: Discord.Net v2.2.0 (API v6)
+10:47:23 [Verbose] Rest: GET voice/regions: 558.62 ms
+10:47:23 [Verbose] Rest: GET users/@me: 114.54 ms
+10:47:23 [Info] Gateway: Connecting
+10:47:23 [Verbose] Rest: GET gateway: 56.97 ms
+10:47:24 [Info] Gateway: Connected
+10:47:24 [Verbose] Gateway: Connected to Real Life
+10:47:25 [Info] Gateway: Ready
+10:47:27 [Verbose] Rest: POST channels/703058789506482309/messages: 308.09 ms
+10:47:27 [Verbose] Command: Executed "help" for EZRoot#7559 in Real Life/asdasd
+10:58:53 [Info] Discord: Discord.Net v2.2.0 (API v6)
+10:58:54 [Verbose] Rest: GET voice/regions: 538.39 ms
+10:58:54 [Verbose] Rest: GET users/@me: 143.34 ms
+10:58:54 [Info] Gateway: Connecting
+10:58:54 [Verbose] Rest: GET gateway: 47.75 ms
+10:58:55 [Info] Gateway: Connected
+10:58:55 [Verbose] Gateway: Connected to Real Life
+10:58:56 [Info] Gateway: Ready
+10:59:01 [Verbose] Rest: POST channels/703058789506482309/messages: 311.04 ms
+10:59:02 [Verbose] Command: Executed "help" for EZRoot#7559 in Real Life/asdasd
+10:59:05 [Info] Audio #1: Connecting
+10:59:06 [Warning] Audio #1: Unknown OpCode (Hello)
+10:59:06 [Info] Audio #1: Connected
+10:59:06 [Verbose] Rest: POST channels/703058789506482309/messages: 140.15 ms
+10:59:06 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+10:59:09 [Verbose] Rest: POST channels/703058789506482309/messages: 147.16 ms
+10:59:09 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+11:00:30 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:00:30 [Verbose] Rest: GET voice/regions: 561.89 ms
+11:00:31 [Verbose] Rest: GET users/@me: 157.79 ms
+11:00:31 [Info] Gateway: Connecting
+11:00:31 [Verbose] Rest: GET gateway: 59.26 ms
+11:00:31 [Info] Gateway: Connected
+11:00:32 [Verbose] Gateway: Connected to Real Life
+11:00:32 [Info] Gateway: Ready
+11:00:41 [Verbose] Rest: POST channels/703058789506482309/messages: 186.04 ms
+11:00:41 [Verbose] Command: Executed "help" for EZRoot#7559 in Real Life/asdasd
+11:00:46 [Info] Audio #1: Connecting
+11:00:47 [Warning] Audio #1: Unknown OpCode (Hello)
+11:00:47 [Info] Audio #1: Connected

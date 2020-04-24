@@ -14,6 +14,8 @@ namespace AshBot.Services
     {
         private readonly ConcurrentDictionary<ulong, IAudioClient> ConnectedChannels = new ConcurrentDictionary<ulong, IAudioClient>();
 
+        private string _musicDirectory = Path.Combine(AppContext.BaseDirectory, "usermusic");
+
         public async Task JoinAudio(IGuild guild, IVoiceChannel target)
         {
             IAudioClient client;
@@ -48,6 +50,9 @@ namespace AshBot.Services
 
         public async Task SendAudioAsync(IGuild guild, IMessageChannel channel, string path)
         {
+            path = Path.Combine(_musicDirectory, path);
+            Console.Out.WriteLine(path);
+            Console.Out.WriteLine(path);
             // Your task: Get a full path to the file if the value of 'path' is only a filename.
             if (!File.Exists(path))
             {
