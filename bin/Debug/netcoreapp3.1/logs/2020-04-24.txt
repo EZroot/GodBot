@@ -324,3 +324,278 @@
 03:05:28 [Info] Gateway: Ready
 03:05:39 [Verbose] Rest: POST channels/640357094054297627/messages: 159.82 ms
 03:05:39 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/all-chat
+04:53:56 [Info] Discord: Discord.Net v2.2.0 (API v6)
+04:53:57 [Verbose] Rest: GET voice/regions: 625.71 ms
+04:53:57 [Verbose] Rest: GET users/@me: 131.3 ms
+04:53:57 [Info] Gateway: Connecting
+04:53:57 [Verbose] Rest: GET gateway: 56.21 ms
+04:53:58 [Info] Gateway: Connected
+04:53:58 [Verbose] Gateway: Connected to Real Life
+04:53:59 [Info] Gateway: Ready
+03:30:57 [Info] Discord: Discord.Net v2.2.0 (API v6)
+03:30:58 [Verbose] Rest: GET voice/regions: 1016.81 ms
+03:30:58 [Verbose] Rest: GET users/@me: 130.63 ms
+03:30:58 [Info] Gateway: Connecting
+03:30:58 [Verbose] Rest: GET gateway: 56.82 ms
+03:30:59 [Info] Gateway: Connected
+03:30:59 [Verbose] Gateway: Connected to Real Life
+03:30:59 [Info] Gateway: Ready
+03:31:08 [Verbose] Rest: POST channels/640357094054297627/messages: 183.99 ms
+03:31:08 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/all-chat
+03:31:14 [Verbose] Rest: POST channels/640357094054297627/messages: 162.41 ms
+03:31:14 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/all-chat
+03:31:38 [Verbose] Rest: POST channels/640357094054297627/messages: 257.94 ms
+03:31:38 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/all-chat
+03:42:06 [Info] Discord: Discord.Net v2.2.0 (API v6)
+03:42:06 [Verbose] Rest: GET voice/regions: 588.81 ms
+03:42:06 [Verbose] Rest: GET users/@me: 113.93 ms
+03:42:06 [Info] Gateway: Connecting
+03:42:07 [Verbose] Rest: GET gateway: 56.77 ms
+03:42:07 [Info] Gateway: Connected
+03:42:07 [Verbose] Gateway: Connected to Real Life
+03:42:08 [Info] Gateway: Ready
+08:45:34 [Info] Discord: Discord.Net v2.2.0 (API v6)
+08:45:35 [Verbose] Rest: GET voice/regions: 1417.89 ms
+08:45:35 [Verbose] Rest: GET users/@me: 118.79 ms
+08:45:35 [Info] Gateway: Connecting
+08:45:36 [Verbose] Rest: GET gateway: 67.66 ms
+08:47:02 [Info] Discord: Discord.Net v2.2.0 (API v6)
+08:47:03 [Verbose] Rest: GET voice/regions: 811.42 ms
+08:47:03 [Verbose] Rest: GET users/@me: 396.49 ms
+08:47:03 [Info] Gateway: Connecting
+08:47:04 [Verbose] Rest: GET gateway: 156.61 ms
+08:47:04 [Info] Gateway: Connected
+08:47:05 [Verbose] Gateway: Connected to Real Life
+08:47:05 [Info] Gateway: Ready
+08:47:37 [Error] Command: Discord.Commands.CommandException: Error occurred executing "join" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.DllNotFoundException: Unable to load DLL 'opus' or one of its dependencies: The specified module could not be found. (0x8007007E)
+   at Discord.Audio.OpusDecoder.CreateDecoder(Int32 Fs, Int32 channels, OpusError& error)
+   at Discord.Audio.OpusDecoder..ctor()
+   at Discord.Audio.Streams.OpusDecodeStream..ctor(AudioStream next)
+   at Discord.Audio.AudioClient.CreateInputStreamAsync(UInt64 userId)
+   at Discord.WebSocket.SocketGuild.RepopulateAudioStreamsAsync()
+   at Discord.WebSocket.SocketGuild.FinishConnectAudio(String url, String token)
+   at Discord.WebSocket.SocketGuild.ConnectAudioAsync(UInt64 channelId, Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at Discord.WebSocket.SocketGuild.ConnectAudioAsync(UInt64 channelId, Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at Discord.WebSocket.SocketVoiceChannel.ConnectAsync(Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at AshBot.Services.AudioService.JoinAudio(IGuild guild, IVoiceChannel target) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\AudioService.cs:line 29
+   at AshBot.Modules.AudioModule.JoinCmd() in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\AudioModule.cs:line 29
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+08:47:37 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+08:47:51 [Verbose] Rest: POST channels/703058789506482309/messages: 199.02 ms
+08:47:51 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+08:47:52 [Error] Command: Discord.Commands.CommandException: Error occurred executing "join" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.DllNotFoundException: Unable to load DLL 'opus' or one of its dependencies: The specified module could not be found. (0x8007007E)
+   at Discord.Audio.OpusDecoder.CreateDecoder(Int32 Fs, Int32 channels, OpusError& error)
+   at Discord.Audio.OpusDecoder..ctor()
+   at Discord.Audio.Streams.OpusDecodeStream..ctor(AudioStream next)
+   at Discord.Audio.AudioClient.CreateInputStreamAsync(UInt64 userId)
+   at Discord.WebSocket.SocketGuild.RepopulateAudioStreamsAsync()
+   at Discord.WebSocket.SocketGuild.FinishConnectAudio(String url, String token)
+   at Discord.WebSocket.SocketGuild.ConnectAudioAsync(UInt64 channelId, Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at Discord.WebSocket.SocketGuild.ConnectAudioAsync(UInt64 channelId, Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at Discord.WebSocket.SocketVoiceChannel.ConnectAsync(Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at AshBot.Services.AudioService.JoinAudio(IGuild guild, IVoiceChannel target) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\AudioService.cs:line 29
+   at AshBot.Modules.AudioModule.JoinCmd() in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\AudioModule.cs:line 29
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+08:47:52 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+08:47:54 [Verbose] Rest: POST channels/703058789506482309/messages: 166.05 ms
+08:47:54 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+08:50:53 [Info] Discord: Discord.Net v2.2.0 (API v6)
+08:50:53 [Verbose] Rest: GET voice/regions: 397.99 ms
+08:50:53 [Verbose] Rest: GET users/@me: 107.13 ms
+08:50:53 [Info] Gateway: Connecting
+08:50:54 [Verbose] Rest: GET gateway: 44.81 ms
+08:50:54 [Info] Gateway: Connected
+08:50:54 [Verbose] Gateway: Connected to Real Life
+08:50:55 [Info] Gateway: Ready
+08:51:59 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+08:52:02 [Error] Command: Discord.Commands.CommandException: Error occurred executing "join" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.DllNotFoundException: Unable to load DLL 'opus' or one of its dependencies: The specified module could not be found. (0x8007007E)
+   at Discord.Audio.OpusDecoder.CreateDecoder(Int32 Fs, Int32 channels, OpusError& error)
+   at Discord.Audio.OpusDecoder..ctor()
+   at Discord.Audio.Streams.OpusDecodeStream..ctor(AudioStream next)
+   at Discord.Audio.AudioClient.CreateInputStreamAsync(UInt64 userId)
+   at Discord.WebSocket.SocketGuild.RepopulateAudioStreamsAsync()
+   at Discord.WebSocket.SocketGuild.FinishConnectAudio(String url, String token)
+   at Discord.WebSocket.SocketGuild.ConnectAudioAsync(UInt64 channelId, Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at Discord.WebSocket.SocketGuild.ConnectAudioAsync(UInt64 channelId, Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at Discord.WebSocket.SocketVoiceChannel.ConnectAsync(Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at AshBot.Services.AudioService.JoinAudio(IGuild guild, IVoiceChannel target) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\AudioService.cs:line 29
+   at AshBot.Modules.AudioModule.JoinCmd() in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\AudioModule.cs:line 29
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+08:52:02 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+08:52:04 [Error] Command: Discord.Commands.CommandException: Error occurred executing "join" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.DllNotFoundException: Unable to load DLL 'opus' or one of its dependencies: The specified module could not be found. (0x8007007E)
+   at Discord.Audio.OpusDecoder.CreateDecoder(Int32 Fs, Int32 channels, OpusError& error)
+   at Discord.Audio.OpusDecoder..ctor()
+   at Discord.Audio.Streams.OpusDecodeStream..ctor(AudioStream next)
+   at Discord.Audio.AudioClient.CreateInputStreamAsync(UInt64 userId)
+   at Discord.WebSocket.SocketGuild.RepopulateAudioStreamsAsync()
+   at Discord.WebSocket.SocketGuild.FinishConnectAudio(String url, String token)
+   at Discord.WebSocket.SocketGuild.ConnectAudioAsync(UInt64 channelId, Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at Discord.WebSocket.SocketGuild.ConnectAudioAsync(UInt64 channelId, Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at Discord.WebSocket.SocketVoiceChannel.ConnectAsync(Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at AshBot.Services.AudioService.JoinAudio(IGuild guild, IVoiceChannel target) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\AudioService.cs:line 29
+   at AshBot.Modules.AudioModule.JoinCmd() in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\AudioModule.cs:line 29
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+08:52:04 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+08:52:06 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+08:52:09 [Verbose] Rest: POST channels/703058789506482309/messages: 147.05 ms
+08:52:09 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+08:52:12 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+08:53:14 [Info] Discord: Discord.Net v2.2.0 (API v6)
+08:53:14 [Verbose] Rest: GET voice/regions: 490.67 ms
+08:53:14 [Verbose] Rest: GET users/@me: 112.78 ms
+08:53:14 [Info] Gateway: Connecting
+08:53:14 [Verbose] Rest: GET gateway: 50.68 ms
+08:53:15 [Info] Gateway: Connected
+08:53:15 [Verbose] Gateway: Connected to Real Life
+08:53:16 [Info] Gateway: Ready
+08:53:37 [Error] Command: Discord.Commands.CommandException: Error occurred executing "join" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.DllNotFoundException: Unable to load DLL 'opus' or one of its dependencies: The specified module could not be found. (0x8007007E)
+   at Discord.Audio.OpusDecoder.CreateDecoder(Int32 Fs, Int32 channels, OpusError& error)
+   at Discord.Audio.OpusDecoder..ctor()
+   at Discord.Audio.Streams.OpusDecodeStream..ctor(AudioStream next)
+   at Discord.Audio.AudioClient.CreateInputStreamAsync(UInt64 userId)
+   at Discord.WebSocket.SocketGuild.RepopulateAudioStreamsAsync()
+   at Discord.WebSocket.SocketGuild.FinishConnectAudio(String url, String token)
+   at Discord.WebSocket.SocketGuild.ConnectAudioAsync(UInt64 channelId, Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at Discord.WebSocket.SocketGuild.ConnectAudioAsync(UInt64 channelId, Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at Discord.WebSocket.SocketVoiceChannel.ConnectAsync(Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at AshBot.Services.AudioService.JoinAudio(IGuild guild, IVoiceChannel target) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\AudioService.cs:line 29
+   at AshBot.Modules.AudioModule.JoinCmd() in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\AudioModule.cs:line 29
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+08:53:37 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+08:56:35 [Info] Discord: Discord.Net v2.2.0 (API v6)
+08:56:35 [Verbose] Rest: GET voice/regions: 594.66 ms
+08:56:35 [Verbose] Rest: GET users/@me: 169.89 ms
+08:56:36 [Info] Gateway: Connecting
+08:56:36 [Verbose] Rest: GET gateway: 72.48 ms
+08:56:36 [Info] Gateway: Connected
+08:56:36 [Verbose] Gateway: Connected to Real Life
+08:56:37 [Info] Gateway: Ready
+08:56:43 [Error] Command: Discord.Commands.CommandException: Error occurred executing "join" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.DllNotFoundException: Unable to load DLL 'opus' or one of its dependencies: The specified module could not be found. (0x8007007E)
+   at Discord.Audio.OpusDecoder.CreateDecoder(Int32 Fs, Int32 channels, OpusError& error)
+   at Discord.Audio.OpusDecoder..ctor()
+   at Discord.Audio.Streams.OpusDecodeStream..ctor(AudioStream next)
+   at Discord.Audio.AudioClient.CreateInputStreamAsync(UInt64 userId)
+   at Discord.WebSocket.SocketGuild.RepopulateAudioStreamsAsync()
+   at Discord.WebSocket.SocketGuild.FinishConnectAudio(String url, String token)
+   at Discord.WebSocket.SocketGuild.ConnectAudioAsync(UInt64 channelId, Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at Discord.WebSocket.SocketGuild.ConnectAudioAsync(UInt64 channelId, Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at Discord.WebSocket.SocketVoiceChannel.ConnectAsync(Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at AshBot.Services.AudioService.JoinAudio(IGuild guild, IVoiceChannel target) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\AudioService.cs:line 29
+   at AshBot.Modules.AudioModule.JoinCmd() in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\AudioModule.cs:line 29
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+08:56:43 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+09:00:24 [Info] Discord: Discord.Net v2.2.0 (API v6)
+09:00:25 [Verbose] Rest: GET voice/regions: 549.23 ms
+09:00:25 [Verbose] Rest: GET users/@me: 107.03 ms
+09:00:25 [Info] Gateway: Connecting
+09:00:25 [Verbose] Rest: GET gateway: 46.84 ms
+09:00:26 [Info] Gateway: Connected
+09:00:26 [Verbose] Gateway: Connected to Real Life
+09:00:26 [Info] Gateway: Ready
+09:00:32 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+09:00:34 [Error] Command: Discord.Commands.CommandException: Error occurred executing "join" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.DllNotFoundException: Unable to load DLL 'opus' or one of its dependencies: The specified module could not be found. (0x8007007E)
+   at Discord.Audio.OpusDecoder.CreateDecoder(Int32 Fs, Int32 channels, OpusError& error)
+   at Discord.Audio.OpusDecoder..ctor()
+   at Discord.Audio.Streams.OpusDecodeStream..ctor(AudioStream next)
+   at Discord.Audio.AudioClient.CreateInputStreamAsync(UInt64 userId)
+   at Discord.WebSocket.SocketGuild.RepopulateAudioStreamsAsync()
+   at Discord.WebSocket.SocketGuild.FinishConnectAudio(String url, String token)
+   at Discord.WebSocket.SocketGuild.ConnectAudioAsync(UInt64 channelId, Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at Discord.WebSocket.SocketGuild.ConnectAudioAsync(UInt64 channelId, Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at Discord.WebSocket.SocketVoiceChannel.ConnectAsync(Boolean selfDeaf, Boolean selfMute, Boolean external)
+   at AshBot.Services.AudioService.JoinAudio(IGuild guild, IVoiceChannel target) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\AudioService.cs:line 29
+   at AshBot.Modules.AudioModule.JoinCmd() in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\AudioModule.cs:line 29
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+09:00:34 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+09:01:41 [Info] Discord: Discord.Net v2.2.0 (API v6)
+09:01:42 [Verbose] Rest: GET voice/regions: 1598.76 ms
+09:01:43 [Verbose] Rest: GET users/@me: 880.67 ms
+09:01:43 [Info] Gateway: Connecting
+09:01:44 [Verbose] Rest: GET gateway: 1051.96 ms
+09:01:45 [Info] Gateway: Connected
+09:01:45 [Verbose] Gateway: Connected to Real Life
+09:01:45 [Info] Audio #1: Connecting
+09:01:45 [Info] Gateway: Ready
+09:01:46 [Warning] Audio #1: Unknown OpCode (Hello)
+09:01:47 [Info] Audio #1: Connected
+09:01:47 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+09:04:20 [Info] Discord: Discord.Net v2.2.0 (API v6)
+09:04:21 [Verbose] Rest: GET voice/regions: 622.91 ms
+09:04:21 [Verbose] Rest: GET users/@me: 139.66 ms
+09:04:21 [Info] Gateway: Connecting
+09:04:21 [Verbose] Rest: GET gateway: 50.33 ms
+09:04:22 [Info] Gateway: Connected
+09:04:22 [Verbose] Gateway: Connected to Real Life
+09:04:22 [Info] Gateway: Ready
+09:04:25 [Info] Audio #1: Connecting
+09:04:25 [Warning] Audio #1: Unknown OpCode (Hello)
+09:04:26 [Info] Audio #1: Connected
+09:04:26 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd
+09:04:28 [Error] Command: Discord.Commands.CommandException: Error occurred executing "play" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at AshBot.Services.AudioService.CreateProcess(String path) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\AudioService.cs:line 72
+   at AshBot.Services.AudioService.SendAudioAsync(IGuild guild, IMessageChannel channel, String path) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\AudioService.cs:line 61
+   at AshBot.Modules.AudioModule.PlayCmd(String song) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\AudioModule.cs:line 44
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+09:04:28 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+09:04:33 [Verbose] Rest: POST channels/703058789506482309/messages: 135.63 ms
+09:04:33 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+09:04:36 [Error] Command: Discord.Commands.CommandException: Error occurred executing "play" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at AshBot.Services.AudioService.CreateProcess(String path) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\AudioService.cs:line 72
+   at AshBot.Services.AudioService.SendAudioAsync(IGuild guild, IMessageChannel channel, String path) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\AudioService.cs:line 61
+   at AshBot.Modules.AudioModule.PlayCmd(String song) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\AudioModule.cs:line 44
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+09:04:36 [Verbose] Command: Executed "play" for EZRoot#7559 in Real Life/asdasd
+09:08:27 [Info] Discord: Discord.Net v2.2.0 (API v6)
+09:08:28 [Verbose] Rest: GET voice/regions: 540.95 ms
+09:08:29 [Verbose] Rest: GET users/@me: 125.61 ms
+09:08:29 [Info] Gateway: Connecting
+09:08:29 [Verbose] Rest: GET gateway: 51.81 ms
+09:08:30 [Info] Gateway: Connected
+09:08:30 [Verbose] Gateway: Connected to Real Life
+09:08:30 [Info] Gateway: Ready
+09:08:47 [Info] Audio #1: Connecting
+09:08:48 [Warning] Audio #1: Unknown OpCode (Hello)
+09:08:48 [Info] Audio #1: Connected
+09:08:48 [Verbose] Command: Executed "join" for EZRoot#7559 in Real Life/asdasd

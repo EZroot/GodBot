@@ -3,7 +3,7 @@
     "Username": "EZRoot",
     "Role": "@everyone,DICTATOR,Nitro Booster",
     "Level": 1,
-    "Xp": 56,
+    "Xp": 76,
     "XpTillLevel": 1000.0,
     "Id": 263098093824638979
   },
@@ -11,7 +11,7 @@
     "Username": "MisterMonty",
     "Role": "@everyone,MAD wordplays",
     "Level": 1,
-    "Xp": -4,
+    "Xp": 73,
     "XpTillLevel": 1000.0,
     "Id": 294609780775845897
   },
@@ -22,5 +22,21 @@
     "Xp": 0,
     "XpTillLevel": 1000.0,
     "Id": 387269775266414592
+  },
+  {
+    "Username": "CheekyZedbra",
+    "Role": "@everyone,Vape-cology",
+    "Level": 1,
+    "Xp": 0,
+    "XpTillLevel": 1000.0,
+    "Id": 448232881958158337
+  },
+  {
+    "Username": "Skipper",
+    "Role": "@everyone,Musical Medik",
+    "Level": 1,
+    "Xp": 0,
+    "XpTillLevel": 1000.0,
+    "Id": 280417449697083392
   }
 ]

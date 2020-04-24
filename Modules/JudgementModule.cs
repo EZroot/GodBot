@@ -19,19 +19,33 @@ namespace AshBot.Modules
         public async Task CheckStats()
         {
             UserData userData = JudgementService._activeUserList.Single(item => item.Id == Context.User.Id);
-            await ReplyAsync(":exclamation:" + userData.Username + ":exclamation:\n.Level: " + userData.Level + "\n.XP:    " + userData.Xp+"\n.Goal:"+userData.XpTillLevel);
+            await ReplyAsync(":exclamation:" + userData.Username +
+                ":exclamation:\n.Level: " + userData.Level +
+                "\n.XP:    " + userData.Xp+"\n.Goal:"+userData.XpTillLevel);
         }
 
         [Command("judge")]
         [Summary("Judge em.")]
         public async Task JudgeUser(SocketUser user = null)
         {
-            string result = "";
+            var authorUser = Context.User;
+            string result = "Not enough XP. Use !help noob.";
             if (user == null)
                 user = Context.User;
 
             UserData userData = JudgementService._activeUserList.Single(item => item.Id == user.Id);
-            result = "You shall be JUDGED " + userData.Username + "! By the power of Runescape, I smite you for " + (userData.Level * 9 + rand.Next(userData.Level + 4)) + "\n dmg. Your xp is now " + userData.Xp + ".";
+            UserData authorData = JudgementService._activeUserList.Single(item => item.Id == authorUser.Id);
+
+            if (authorData.Xp > 20)
+            {
+                authorData.LoseXP(20);
+                userData.LoseXP(userData.Level * 9 + rand.Next(userData.Level + 4));
+
+                result = "You shall be JUDGED " + userData.Username +
+                    "! By the power of Runescape, I smite you for " + (userData.Level * 9 + rand.Next(userData.Level + 4)) +
+                    "\n dmg. Your xp is now " + userData.Xp + ".\n" + authorData.Username + " lost 20XP!";
+            }
+
             await ReplyAsync(result);
         }
     }

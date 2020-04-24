@@ -12,5 +12,10 @@ namespace AshBot.Modules
         [Summary("Echoes a message.")]
         public Task SayAsync([Remainder] [Summary("The text to echo")] string echo)
     => ReplyAsync(echo);
+
+        [Command("help")]
+        [Summary("Help message.")]
+        public Task SayHelp()
+    => ReplyAsync("!stats - shows your current level and xp\n!judge @user to judge someone\n[Info]\nBe nice n youll get ex pees!");
     }
 }

@@ -36,6 +36,7 @@ namespace AshBot
             provider.GetRequiredService<LoggingService>();      // Start the logging service
             provider.GetRequiredService<CommandHandler>(); 		// Start the command handler service
             provider.GetRequiredService<JudgementService>();    // Start the judgement service
+            provider.GetRequiredService<AudioService>();
 
             await provider.GetRequiredService<StartupService>().StartAsync();       // Start the startup service
             await Task.Delay(-1);                               // Keep the program alive
@@ -57,6 +58,7 @@ namespace AshBot
             .AddSingleton<StartupService>()         // Add startupservice to the collection
             .AddSingleton<LoggingService>()         // Add loggingservice to the collection
             .AddSingleton<JudgementService>()       //Add judgement service to the collection
+            .AddSingleton<AudioService>()
             .AddSingleton<Random>()                 // Add random to the collection
             .AddSingleton(Configuration);           // Add the configuration to the collection
         }

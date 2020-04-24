@@ -14,8 +14,6 @@ namespace AshBot.Services
 {
     public class JudgementService
     {
-        const string ROLE_DICTATOR = "DICTATOR";
-
         private readonly DiscordSocketClient _discord;
         private readonly CommandService _commands;
 
@@ -79,12 +77,14 @@ namespace AshBot.Services
             return Console.Out.WriteLineAsync(result);       // Write the log text to the console
         }
 
+        //Save our user data
         private void SaveUserData()
         {
             Console.Out.WriteLine($"{DateTime.UtcNow.ToString("hh:mm:ss")} [Saved] Saved all user data!");
             File.WriteAllText(_userFile, JsonConvert.SerializeObject(_activeUserList, Formatting.Indented));
         }
 
+        //Load User Data
         private List<UserData> LoadUserData()
         {
             Console.Out.WriteLine($"{DateTime.UtcNow.ToString("hh:mm:ss")} [Loaded] User data json file");
