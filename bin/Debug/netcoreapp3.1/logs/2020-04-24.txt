@@ -297,3 +297,30 @@
 02:50:43 [Info] Gateway: Ready
 02:51:38 [Verbose] Rest: POST channels/703058789506482309/messages: 188.99 ms
 02:51:39 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
+03:01:21 [Info] Discord: Discord.Net v2.2.0 (API v6)
+03:01:24 [Verbose] Rest: GET voice/regions: 3256.74 ms
+03:01:47 [Info] Discord: Discord.Net v2.2.0 (API v6)
+03:03:37 [Info] Discord: Discord.Net v2.2.0 (API v6)
+03:03:38 [Verbose] Rest: GET voice/regions: 1545.67 ms
+03:03:39 [Verbose] Rest: GET users/@me: 117.95 ms
+03:03:39 [Info] Gateway: Connecting
+03:03:39 [Verbose] Rest: GET gateway: 71.14 ms
+03:03:44 [Info] Gateway: Connected
+03:03:44 [Verbose] Gateway: Connected to Real Life
+03:03:45 [Info] Gateway: Ready
+03:04:21 [Verbose] Rest: POST channels/703058789506482309/messages: 188.05 ms
+03:04:21 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/asdasd
+03:04:27 [Verbose] Rest: POST channels/703058789506482309/messages: 151.05 ms
+03:04:27 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/asdasd
+03:04:31 [Verbose] Rest: POST channels/703058789506482309/messages: 109.61 ms
+03:04:31 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/asdasd
+03:05:26 [Info] Discord: Discord.Net v2.2.0 (API v6)
+03:05:27 [Verbose] Rest: GET voice/regions: 542.82 ms
+03:05:27 [Verbose] Rest: GET users/@me: 116.65 ms
+03:05:27 [Info] Gateway: Connecting
+03:05:27 [Verbose] Rest: GET gateway: 50.59 ms
+03:05:28 [Info] Gateway: Connected
+03:05:28 [Verbose] Gateway: Connected to Real Life
+03:05:28 [Info] Gateway: Ready
+03:05:39 [Verbose] Rest: POST channels/640357094054297627/messages: 159.82 ms
+03:05:39 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/all-chat
