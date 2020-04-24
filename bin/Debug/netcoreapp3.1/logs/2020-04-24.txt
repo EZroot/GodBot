@@ -1,0 +1,114 @@
+12:03:59 [Info] Discord: Discord.Net v2.2.0 (API v6)
+12:04:00 [Verbose] Rest: GET voice/regions: 609.51 ms
+12:04:00 [Verbose] Rest: GET users/@me: 166.14 ms
+12:04:01 [Info] Gateway: Connecting
+12:04:01 [Verbose] Rest: GET gateway: 58.17 ms
+12:04:01 [Info] Gateway: Connected
+12:04:01 [Verbose] Gateway: Connected to Real Life
+12:04:02 [Info] Gateway: Ready
+01:29:48 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:29:49 [Verbose] Rest: GET voice/regions: 1057.83 ms
+01:29:50 [Verbose] Rest: GET users/@me: 106.97 ms
+01:29:50 [Info] Gateway: Connecting
+01:29:50 [Verbose] Rest: GET gateway: 55.93 ms
+01:29:51 [Info] Gateway: Connected
+01:29:51 [Verbose] Gateway: Connected to Real Life
+01:29:52 [Info] Gateway: Ready
+01:30:00 [Warning] Gateway: System.InvalidCastException: Unable to cast object of type 'WhereListIterator`1[AshBot.Data.UserData]' to type 'AshBot.Data.UserData'.
+   at AshBot.Services.JudgementService.OnJudgeAsync(SocketMessage msg) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\JudgementService.cs:line 68
+   at Discord.EventExtensions.InvokeAsync[T](AsyncEvent`1 eventHandler, T arg)
+   at Discord.WebSocket.DiscordSocketClient.TimeoutWrap(String name, Func`1 action)
+01:31:01 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:31:02 [Verbose] Rest: GET voice/regions: 537.01 ms
+01:31:02 [Verbose] Rest: GET users/@me: 123.61 ms
+01:31:02 [Info] Gateway: Connecting
+01:31:02 [Verbose] Rest: GET gateway: 50.87 ms
+01:31:03 [Info] Gateway: Connected
+01:31:03 [Verbose] Gateway: Connected to Real Life
+01:31:03 [Info] Gateway: Ready
+01:33:15 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:33:16 [Verbose] Rest: GET voice/regions: 505.97 ms
+01:33:16 [Verbose] Rest: GET users/@me: 100.1 ms
+01:33:16 [Info] Gateway: Connecting
+01:33:16 [Verbose] Rest: GET gateway: 53.51 ms
+01:33:17 [Info] Gateway: Connected
+01:33:17 [Verbose] Gateway: Connected to Real Life
+01:33:18 [Info] Gateway: Ready
+01:33:36 [Warning] Gateway: System.NullReferenceException: Object reference not set to an instance of an object.
+   at AshBot.Services.JudgementService.OnJudgeAsync(SocketMessage msg) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\JudgementService.cs:line 70
+   at Discord.EventExtensions.InvokeAsync[T](AsyncEvent`1 eventHandler, T arg)
+   at Discord.WebSocket.DiscordSocketClient.TimeoutWrap(String name, Func`1 action)
+01:34:05 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:34:06 [Verbose] Rest: GET voice/regions: 557.92 ms
+01:34:06 [Verbose] Rest: GET users/@me: 113.89 ms
+01:34:06 [Info] Gateway: Connecting
+01:34:06 [Verbose] Rest: GET gateway: 62.54 ms
+01:34:07 [Info] Gateway: Connected
+01:34:07 [Verbose] Gateway: Connected to Real Life
+01:34:08 [Info] Gateway: Ready
+01:34:17 [Warning] Gateway: System.NullReferenceException: Object reference not set to an instance of an object.
+   at AshBot.Services.JudgementService.OnJudgeAsync(SocketMessage msg) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\JudgementService.cs:line 72
+   at Discord.EventExtensions.InvokeAsync[T](AsyncEvent`1 eventHandler, T arg)
+   at Discord.WebSocket.DiscordSocketClient.TimeoutWrap(String name, Func`1 action)
+01:35:45 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:35:46 [Verbose] Rest: GET voice/regions: 572.71 ms
+01:35:46 [Verbose] Rest: GET users/@me: 127.27 ms
+01:35:46 [Info] Gateway: Connecting
+01:35:46 [Verbose] Rest: GET gateway: 55.3 ms
+01:35:47 [Info] Gateway: Connected
+01:35:47 [Verbose] Gateway: Connected to Real Life
+01:35:47 [Info] Gateway: Ready
+01:35:55 [Warning] Gateway: System.NullReferenceException: Object reference not set to an instance of an object.
+   at AshBot.Services.JudgementService.OnJudgeAsync(SocketMessage msg) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Services\JudgementService.cs:line 70
+   at Discord.EventExtensions.InvokeAsync[T](AsyncEvent`1 eventHandler, T arg)
+   at Discord.WebSocket.DiscordSocketClient.TimeoutWrap(String name, Func`1 action)
+01:38:22 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:38:23 [Verbose] Rest: GET voice/regions: 545.96 ms
+01:38:23 [Verbose] Rest: GET users/@me: 115.51 ms
+01:38:23 [Info] Gateway: Connecting
+01:38:23 [Verbose] Rest: GET gateway: 60.11 ms
+01:38:24 [Info] Gateway: Connected
+01:38:24 [Verbose] Gateway: Connected to Real Life
+01:38:25 [Info] Gateway: Ready
+01:38:56 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:38:56 [Verbose] Rest: GET voice/regions: 550.17 ms
+01:38:57 [Verbose] Rest: GET users/@me: 109.4 ms
+01:38:57 [Info] Gateway: Connecting
+01:38:57 [Verbose] Rest: GET gateway: 56.67 ms
+01:38:57 [Info] Gateway: Connected
+01:38:57 [Verbose] Gateway: Connected to Real Life
+01:38:58 [Info] Gateway: Ready
+01:40:25 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:40:47 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:41:25 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:41:25 [Verbose] Rest: GET voice/regions: 553.97 ms
+01:41:26 [Verbose] Rest: GET users/@me: 129.96 ms
+01:41:26 [Info] Gateway: Connecting
+01:41:26 [Verbose] Rest: GET gateway: 47.64 ms
+01:41:27 [Info] Gateway: Connected
+01:41:27 [Verbose] Gateway: Connected to Real Life
+01:41:27 [Info] Gateway: Ready
+01:43:51 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:43:51 [Verbose] Rest: GET voice/regions: 508.48 ms
+01:43:51 [Verbose] Rest: GET users/@me: 135.84 ms
+01:43:52 [Info] Gateway: Connecting
+01:43:52 [Verbose] Rest: GET gateway: 51.82 ms
+01:43:52 [Info] Gateway: Connected
+01:43:52 [Verbose] Gateway: Connected to Real Life
+01:43:53 [Info] Gateway: Ready
+01:47:24 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:47:24 [Verbose] Rest: GET voice/regions: 574.4 ms
+01:47:25 [Verbose] Rest: GET users/@me: 151.83 ms
+01:47:25 [Info] Gateway: Connecting
+01:47:25 [Verbose] Rest: GET gateway: 73.54 ms
+01:47:25 [Info] Gateway: Connected
+01:47:26 [Verbose] Gateway: Connected to Real Life
+01:47:26 [Info] Gateway: Ready
+01:47:55 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:47:56 [Verbose] Rest: GET voice/regions: 522.19 ms
+01:47:56 [Verbose] Rest: GET users/@me: 151.64 ms
+01:47:56 [Info] Gateway: Connecting
+01:47:56 [Verbose] Rest: GET gateway: 57.2 ms
+01:47:57 [Info] Gateway: Connected
+01:47:57 [Verbose] Gateway: Connected to Real Life
+01:47:58 [Info] Gateway: Ready

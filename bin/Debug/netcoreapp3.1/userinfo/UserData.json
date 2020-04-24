@@ -1,8 +1,8 @@
 {
   "Username": "EZRoot",
   "Role": "@everyone,DICTATOR,Nitro Booster",
-  "Level": 99,
-  "Xp": 1337,
-  "XpTillLevel": 2500,
+  "Level": 4,
+  "Xp": 3200,
+  "XpTillLevel": 4096.0,
   "Id": 263098093824638979
 }

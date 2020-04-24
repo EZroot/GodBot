@@ -43,34 +43,64 @@ namespace AshBot.Services
             if (!File.Exists(_userFile))               // Create today's log file if it doesn't exist
                 File.Create(_userFile).Dispose();
 
-            SocketGuildUser su = msg.Author as SocketGuildUser;                          //User who sent the message
+            SocketGuildUser sgu = msg.Author as SocketGuildUser;                          //User who sent the message
             SocketUserMessage suMsg = msg as SocketUserMessage;                         //Socket user message
             SocketCommandContext context = new SocketCommandContext(_discord, suMsg);  //Context of the message
 
             //Create temp user data
-            UserData userData = new UserData(su.Id, msg.Author.Username, String.Join(",", su.Roles.Select(p => p.ToString()).ToArray()), 99, 1337, 2500);
+            UserData userData = new UserData(sgu.Id,
+                msg.Author.Username,
+                String.Join(",", sgu.Roles.Select(p => p.ToString()).ToArray()),
+                1,
+                0,
+                1000);
 
-            //Add user to our active user list
+            //List element check + tracking active users
             bool containsItem = _userDataList.Any(item => item.Id == userData.Id); //compare userID to every userID in list to see if we exist
             string result = "";
-            if (!containsItem)
+            if (!containsItem) //Add User
             {
                 _userDataList.Add(userData);
-                result = $"{DateTime.UtcNow.ToString("hh:mm:ss")} [Judgement] " +userData.Username + "-> Added to active user list";
+                result = $"{DateTime.UtcNow.ToString("hh:mm:ss")} [Judgement] <" +userData.Username + "> Added to active user list";
             }
-            else
+            else              //User Already Exists
             {
-                result = $"{DateTime.UtcNow.ToString("hh:mm:ss")} [Judgement] User already exists in our active list!";
+                userData = _userDataList.Single(item => item.Id == sgu.Id);
+                //Add XP
+                userData.AddXP(400);
+
+                result = $"{DateTime.UtcNow.ToString("hh:mm:ss")} [Judgement] <" + userData.Username + "> updated.";
             }
 
-            //Serialize our user
-            string jsonString = JsonConvert.SerializeObject(userData, Formatting.Indented);
-            //Find out if we already have him stored as a "player" before we append
-            File.WriteAllText(_userFile, jsonString);     // Write the user text to a file
-            //if not, create him as a default player
-            //check his message
-            //update his XP/Level
+            //Save our data
+            File.WriteAllText(_userFile, SerializedUserDataList(_userDataList));
             return Console.Out.WriteLineAsync(result);       // Write the log text to the console
+        }
+
+        //Converts all userdata to json serialized object strings
+        private string SerializedUserDataList(List<UserData> userList)
+        {
+            string serializedJson = "";
+            foreach(UserData d in userList)
+            {
+                serializedJson += JsonConvert.SerializeObject(d,Formatting.Indented);
+            }
+            return serializedJson;
+        }
+
+        private bool CheckUserForRole(SocketGuildUser sgu, string role)
+        {
+            string[] list = sgu.Roles.Select(p => p.ToString()).ToArray();
+            foreach(string s in list)
+            {
+                if(s == role)
+                {
+                    Console.Out.WriteLineAsync($"{DateTime.UtcNow.ToString("hh:mm:ss")} [Judgement] Success! <" + sgu.Username + "> Found role: " + role);
+                    return true;
+                }
+            }
+            Console.Out.WriteLineAsync($"{DateTime.UtcNow.ToString("hh:mm:ss")} [Judgement] Failed: <" + sgu.Username + "> Found " + role);
+            return false;
         }
     }
 }
