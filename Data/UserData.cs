@@ -41,5 +41,11 @@ namespace AshBot.Data
             }
             Console.Out.WriteLineAsync($"{DateTime.UtcNow.ToString("hh:mm:ss")} [UserData] <" + this.username + "> gained " + xp+"XP! Now at "+this.xp);
         }
+
+        public void LoseXP(int xp)
+        {
+            this.xp -= xp;
+            Console.Out.WriteLineAsync($"{DateTime.UtcNow.ToString("hh:mm:ss")} [UserData] <" + this.username + "> lost " + xp + "XP! Now at " + this.xp);
+        }
     }
 }

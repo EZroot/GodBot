@@ -112,3 +112,140 @@
 01:47:57 [Info] Gateway: Connected
 01:47:57 [Verbose] Gateway: Connected to Real Life
 01:47:58 [Info] Gateway: Ready
+01:59:04 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:59:05 [Verbose] Rest: GET voice/regions: 595.11 ms
+01:59:05 [Verbose] Rest: GET users/@me: 158.12 ms
+01:59:05 [Info] Gateway: Connecting
+01:59:06 [Verbose] Rest: GET gateway: 58.43 ms
+01:59:06 [Info] Gateway: Connected
+01:59:06 [Verbose] Gateway: Connected to Real Life
+01:59:07 [Info] Gateway: Ready
+01:59:26 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:59:27 [Verbose] Rest: GET voice/regions: 539.51 ms
+01:59:27 [Verbose] Rest: GET users/@me: 112.92 ms
+01:59:27 [Info] Gateway: Connecting
+01:59:27 [Verbose] Rest: GET gateway: 64.84 ms
+01:59:28 [Info] Gateway: Connected
+01:59:28 [Verbose] Gateway: Connected to Real Life
+01:59:28 [Info] Gateway: Ready
+02:09:41 [Info] Discord: Discord.Net v2.2.0 (API v6)
+02:09:42 [Verbose] Rest: GET voice/regions: 582.3 ms
+02:09:42 [Verbose] Rest: GET users/@me: 114.25 ms
+02:09:42 [Info] Gateway: Connecting
+02:09:42 [Verbose] Rest: GET gateway: 55.71 ms
+02:09:43 [Info] Gateway: Connected
+02:09:43 [Verbose] Gateway: Connected to Real Life
+02:09:44 [Info] Gateway: Ready
+02:10:09 [Verbose] Rest: POST channels/703058789506482309/messages: 298.93 ms
+02:10:11 [Error] Command: Discord.Commands.CommandException: Error occurred executing "stats" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at AshBot.Modules.JudgementModule.<>c__DisplayClass0_0.<CheckStats>b__0(UserData item) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\JudgementModule.cs:line 19
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at AshBot.Modules.JudgementModule.CheckStats(SocketUser user) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\JudgementModule.cs:line 19
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+02:10:11 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
+02:11:30 [Info] Discord: Discord.Net v2.2.0 (API v6)
+02:11:31 [Verbose] Rest: GET voice/regions: 511.59 ms
+02:11:31 [Verbose] Rest: GET users/@me: 109.59 ms
+02:11:31 [Info] Gateway: Connecting
+02:11:31 [Verbose] Rest: GET gateway: 50.03 ms
+02:11:32 [Info] Gateway: Connected
+02:11:32 [Verbose] Gateway: Connected to Real Life
+02:11:33 [Info] Gateway: Ready
+02:11:38 [Error] Command: Discord.Commands.CommandException: Error occurred executing "stats" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at AshBot.Modules.JudgementModule.<>c__DisplayClass0_0.<CheckStats>b__0(UserData item) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\JudgementModule.cs:line 19
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at AshBot.Modules.JudgementModule.CheckStats(SocketUser user) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\JudgementModule.cs:line 19
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+02:11:38 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
+02:12:37 [Info] Discord: Discord.Net v2.2.0 (API v6)
+02:12:37 [Verbose] Rest: GET voice/regions: 502.13 ms
+02:12:38 [Verbose] Rest: GET users/@me: 107.27 ms
+02:12:38 [Info] Gateway: Connecting
+02:12:38 [Verbose] Rest: GET gateway: 56.1 ms
+02:12:38 [Info] Gateway: Connected
+02:12:39 [Verbose] Gateway: Connected to Real Life
+02:12:39 [Info] Gateway: Ready
+02:12:47 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
+02:12:52 [Verbose] Rest: POST channels/703058789506482309/messages: 172.1 ms
+02:12:54 [Verbose] Rest: POST channels/703058789506482309/messages: 129.64 ms
+02:13:10 [Info] Discord: Discord.Net v2.2.0 (API v6)
+02:13:11 [Verbose] Rest: GET voice/regions: 601.5 ms
+02:13:11 [Verbose] Rest: GET users/@me: 175.43 ms
+02:13:11 [Info] Gateway: Connecting
+02:13:11 [Verbose] Rest: GET gateway: 65.78 ms
+02:13:12 [Info] Gateway: Connected
+02:13:12 [Verbose] Gateway: Connected to Real Life
+02:13:13 [Info] Gateway: Ready
+02:13:21 [Verbose] Rest: POST channels/703058789506482309/messages: 194.8 ms
+02:13:21 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
+02:13:27 [Verbose] Rest: POST channels/703058789506482309/messages: 137.55 ms
+02:13:27 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
+02:15:09 [Info] Discord: Discord.Net v2.2.0 (API v6)
+02:15:10 [Verbose] Rest: GET voice/regions: 553.76 ms
+02:15:10 [Verbose] Rest: GET users/@me: 126.79 ms
+02:15:10 [Info] Gateway: Connecting
+02:15:11 [Verbose] Rest: GET gateway: 63.95 ms
+02:15:11 [Info] Gateway: Connected
+02:15:11 [Verbose] Gateway: Connected to Real Life
+02:15:12 [Info] Gateway: Ready
+02:15:17 [Verbose] Rest: POST channels/703058789506482309/messages: 156.12 ms
+02:15:18 [Verbose] Rest: POST channels/703058789506482309/messages: 156.13 ms
+02:15:19 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
+02:15:50 [Info] Discord: Discord.Net v2.2.0 (API v6)
+02:15:51 [Verbose] Rest: GET voice/regions: 500.31 ms
+02:15:51 [Verbose] Rest: GET users/@me: 98.61 ms
+02:15:51 [Info] Gateway: Connecting
+02:15:51 [Verbose] Rest: GET gateway: 49.71 ms
+02:15:52 [Info] Gateway: Connected
+02:15:52 [Verbose] Gateway: Connected to Real Life
+02:15:52 [Info] Gateway: Ready
+02:16:00 [Verbose] Rest: POST channels/703058789506482309/messages: 146.97 ms
+02:16:00 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
+02:16:24 [Info] Discord: Discord.Net v2.2.0 (API v6)
+02:16:24 [Verbose] Rest: GET voice/regions: 541 ms
+02:16:25 [Verbose] Rest: GET users/@me: 145.77 ms
+02:16:25 [Info] Gateway: Connecting
+02:16:25 [Verbose] Rest: GET gateway: 59.5 ms
+02:16:26 [Info] Gateway: Connected
+02:16:26 [Verbose] Gateway: Connected to Real Life
+02:16:26 [Info] Gateway: Ready
+02:16:39 [Verbose] Rest: POST channels/703058789506482309/messages: 173.7 ms
+02:16:39 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
+02:18:08 [Info] Discord: Discord.Net v2.2.0 (API v6)
+02:18:09 [Verbose] Rest: GET voice/regions: 538.87 ms
+02:18:09 [Verbose] Rest: GET users/@me: 95.29 ms
+02:18:09 [Info] Gateway: Connecting
+02:18:09 [Verbose] Rest: GET gateway: 52.72 ms
+02:18:10 [Info] Gateway: Connected
+02:18:10 [Verbose] Gateway: Connected to Real Life
+02:18:11 [Info] Gateway: Ready
+02:18:15 [Verbose] Rest: POST channels/703058789506482309/messages: 134.71 ms
+02:18:15 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
+02:19:32 [Info] Discord: Discord.Net v2.2.0 (API v6)
+02:19:32 [Verbose] Rest: GET voice/regions: 506.23 ms
+02:19:33 [Verbose] Rest: GET users/@me: 105.61 ms
+02:19:33 [Info] Gateway: Connecting
+02:19:33 [Verbose] Rest: GET gateway: 50.83 ms
+02:19:33 [Info] Gateway: Connected
+02:19:34 [Verbose] Gateway: Connected to Real Life
+02:19:34 [Info] Gateway: Ready
+02:19:47 [Verbose] Rest: POST channels/703058789506482309/messages: 210.32 ms
+02:19:47 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
+02:23:40 [Info] Discord: Discord.Net v2.2.0 (API v6)
+02:23:40 [Verbose] Rest: GET voice/regions: 596.53 ms
+02:23:41 [Verbose] Rest: GET users/@me: 155.64 ms
+02:23:41 [Info] Gateway: Connecting
+02:23:41 [Verbose] Rest: GET gateway: 58.6 ms
+02:23:42 [Info] Gateway: Connected
+02:23:42 [Verbose] Gateway: Connected to Real Life
+02:23:42 [Info] Gateway: Ready
+02:23:53 [Verbose] Rest: POST channels/703058789506482309/messages: 650.92 ms
+02:23:53 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd

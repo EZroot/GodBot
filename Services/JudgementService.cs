@@ -23,7 +23,7 @@ namespace AshBot.Services
         private string _userFile => Path.Combine(_userDirectory, $"UserData.json");
 
         //Get our users
-        List<UserData> _userDataList = new List<UserData>();
+        public static List<UserData> _activeUserList = new List<UserData>();
 
         // DiscordSocketClient and CommandService are injected automatically from the IServiceProvider
         public JudgementService(DiscordSocketClient discord, CommandService commands)
@@ -56,24 +56,23 @@ namespace AshBot.Services
                 1000);
 
             //List element check + tracking active users
-            bool containsItem = _userDataList.Any(item => item.Id == userData.Id); //compare userID to every userID in list to see if we exist
+            bool containsItem = _activeUserList.Any(item => item.Id == userData.Id); //compare userID to every userID in list to see if we exist
             string result = "";
             if (!containsItem) //Add User
             {
-                _userDataList.Add(userData);
+                _activeUserList.Add(userData);
                 result = $"{DateTime.UtcNow.ToString("hh:mm:ss")} [Judgement] <" +userData.Username + "> Added to active user list";
             }
             else              //User Already Exists
             {
-                userData = _userDataList.Single(item => item.Id == sgu.Id);
-                //Add XP
-                userData.AddXP(400);
-
+                userData = _activeUserList.Single(item => item.Id == sgu.Id);
+                //Handle Score
+                ScoreHandler(userData, suMsg);
                 result = $"{DateTime.UtcNow.ToString("hh:mm:ss")} [Judgement] <" + userData.Username + "> updated.";
             }
 
             //Save our data
-            File.WriteAllText(_userFile, SerializedUserDataList(_userDataList));
+            File.WriteAllText(_userFile, SerializedUserDataList(_activeUserList));
             return Console.Out.WriteLineAsync(result);       // Write the log text to the console
         }
 
@@ -101,6 +100,45 @@ namespace AshBot.Services
             }
             Console.Out.WriteLineAsync($"{DateTime.UtcNow.ToString("hh:mm:ss")} [Judgement] Failed: <" + sgu.Username + "> Found " + role);
             return false;
+        }
+
+        private void ScoreHandler(UserData userdata, SocketUserMessage msg)
+        {
+            //-1
+            if (msg.Content.Contains("warrior") || msg.Content.Contains("fag") || msg.Content.Contains("gay") || msg.Content.Contains("bitch") || msg.Content.Contains("omg") || msg.Content.Contains("omfg") || msg.Content.Contains("fk") || msg.Content.Contains("shit"))
+            {
+                userdata.LoseXP(5);
+            }
+            //-5
+            if (msg.Content.Contains("gay") || msg.Content.Contains("autism") || msg.Content.Contains("autistic") || msg.Content.Contains("retard") || msg.Content.Contains("retarded") || msg.Content.Contains("dick"))
+            {
+                userdata.LoseXP(8);
+            }
+            //-50
+            if (msg.Content.Contains("goddammit") || msg.Content.Contains("god damn") || msg.Content.Contains("god dam") || msg.Content.Contains("goddam") || msg.Content.Contains("goddamn"))
+            {
+                userdata.LoseXP(50);
+            }
+            if (msg.Content.Contains("Warrior") || msg.Content.Contains("Fag") || msg.Content.Contains("Gay") || msg.Content.Contains("Bitch") || msg.Content.Contains("Omg") || msg.Content.Contains("Fuck") || msg.Content.Contains("fuck") || msg.Content.Contains("shit") || msg.Content.Contains("ass"))
+            {
+                userdata.LoseXP(5);
+            }
+
+            //5
+            if (msg.Content.Contains("beautiful") || msg.Content.Contains("christian") || msg.Content.Contains("amen") || msg.Content.Contains("holy"))
+            {
+                userdata.AddXP(8);
+            }
+            //10
+            if (msg.Content.Contains("love") || msg.Content.Contains("thanks") || msg.Content.Contains("thank you") || msg.Content.Contains("thank u"))
+            {
+                userdata.AddXP(10);
+            }
+            //20
+            if (msg.Content.Contains("i love you"))
+            {
+                userdata.AddXP(20);
+            }
         }
     }
 }
