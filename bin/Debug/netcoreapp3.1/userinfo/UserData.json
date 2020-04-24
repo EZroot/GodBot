@@ -1,15 +1,26 @@
-{
-  "Username": "EZRoot",
-  "Role": "@everyone,DICTATOR,Nitro Booster",
-  "Level": 1,
-  "Xp": 10,
-  "XpTillLevel": 1000.0,
-  "Id": 263098093824638979
-}{
-  "Username": "Mod Ash",
-  "Role": "@everyone,God",
-  "Level": 1,
-  "Xp": 0,
-  "XpTillLevel": 1000.0,
-  "Id": 387269775266414592
-}
+[
+  {
+    "Username": "EZRoot",
+    "Role": "@everyone,DICTATOR,Nitro Booster",
+    "Level": 1,
+    "Xp": 56,
+    "XpTillLevel": 1000.0,
+    "Id": 263098093824638979
+  },
+  {
+    "Username": "MisterMonty",
+    "Role": "@everyone,MAD wordplays",
+    "Level": 1,
+    "Xp": -4,
+    "XpTillLevel": 1000.0,
+    "Id": 294609780775845897
+  },
+  {
+    "Username": "Mod Ash",
+    "Role": "@everyone,The Judge",
+    "Level": 1,
+    "Xp": 0,
+    "XpTillLevel": 1000.0,
+    "Id": 387269775266414592
+  }
+]

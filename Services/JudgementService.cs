@@ -34,6 +34,9 @@ namespace AshBot.Services
             _commands = commands;
 
             _discord.MessageReceived += OnJudgeAsync;
+
+            //Load whatever user data available
+            _activeUserList = LoadUserData();
         }
 
         private Task OnJudgeAsync(SocketMessage msg)
@@ -72,19 +75,21 @@ namespace AshBot.Services
             }
 
             //Save our data
-            File.WriteAllText(_userFile, SerializedUserDataList(_activeUserList));
+            SaveUserData();
             return Console.Out.WriteLineAsync(result);       // Write the log text to the console
         }
 
-        //Converts all userdata to json serialized object strings
-        private string SerializedUserDataList(List<UserData> userList)
+        private void SaveUserData()
         {
-            string serializedJson = "";
-            foreach(UserData d in userList)
-            {
-                serializedJson += JsonConvert.SerializeObject(d,Formatting.Indented);
-            }
-            return serializedJson;
+            Console.Out.WriteLine($"{DateTime.UtcNow.ToString("hh:mm:ss")} [Saved] Saved all user data!");
+            File.WriteAllText(_userFile, JsonConvert.SerializeObject(_activeUserList, Formatting.Indented));
+        }
+
+        private List<UserData> LoadUserData()
+        {
+            Console.Out.WriteLine($"{DateTime.UtcNow.ToString("hh:mm:ss")} [Loaded] User data json file");
+            string json = File.ReadAllText(_userFile);
+            return JsonConvert.DeserializeObject<List<UserData>>(json);
         }
 
         private bool CheckUserForRole(SocketGuildUser sgu, string role)
@@ -102,6 +107,7 @@ namespace AshBot.Services
             return false;
         }
 
+        //ToDo: filter based on positive words/negative words add them together and combine the score
         private void ScoreHandler(UserData userdata, SocketUserMessage msg)
         {
             //-1
@@ -117,27 +123,27 @@ namespace AshBot.Services
             //-50
             if (msg.Content.Contains("goddammit") || msg.Content.Contains("god damn") || msg.Content.Contains("god dam") || msg.Content.Contains("goddam") || msg.Content.Contains("goddamn"))
             {
-                userdata.LoseXP(50);
+                userdata.LoseXP(52);
             }
             if (msg.Content.Contains("Warrior") || msg.Content.Contains("Fag") || msg.Content.Contains("Gay") || msg.Content.Contains("Bitch") || msg.Content.Contains("Omg") || msg.Content.Contains("Fuck") || msg.Content.Contains("fuck") || msg.Content.Contains("shit") || msg.Content.Contains("ass"))
             {
-                userdata.LoseXP(5);
+                userdata.LoseXP(4);
             }
 
             //5
-            if (msg.Content.Contains("beautiful") || msg.Content.Contains("christian") || msg.Content.Contains("amen") || msg.Content.Contains("holy"))
+            if (msg.Content.Contains("beautiful") || msg.Content.Contains("cute") || msg.Content.Contains("trap") || msg.Content.Contains("christian") || msg.Content.Contains("amen") || msg.Content.Contains("holy"))
             {
-                userdata.AddXP(8);
+                userdata.AddXP(86);
             }
             //10
             if (msg.Content.Contains("love") || msg.Content.Contains("thanks") || msg.Content.Contains("thank you") || msg.Content.Contains("thank u"))
             {
-                userdata.AddXP(10);
+                userdata.AddXP(122);
             }
             //20
             if (msg.Content.Contains("i love you"))
             {
-                userdata.AddXP(20);
+                userdata.AddXP(213);
             }
         }
     }

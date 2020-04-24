@@ -249,3 +249,51 @@
 02:23:42 [Info] Gateway: Ready
 02:23:53 [Verbose] Rest: POST channels/703058789506482309/messages: 650.92 ms
 02:23:53 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
+02:32:16 [Info] Discord: Discord.Net v2.2.0 (API v6)
+02:32:16 [Verbose] Rest: GET voice/regions: 556.09 ms
+02:32:17 [Verbose] Rest: GET users/@me: 136.17 ms
+02:32:17 [Info] Gateway: Connecting
+02:32:17 [Verbose] Rest: GET gateway: 47.2 ms
+02:32:17 [Info] Gateway: Connected
+02:32:18 [Verbose] Gateway: Connected to Real Life
+02:32:18 [Info] Gateway: Ready
+02:32:40 [Verbose] Rest: POST channels/640357094054297627/messages: 150.8 ms
+02:32:41 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/all-chat
+02:42:24 [Info] Discord: Discord.Net v2.2.0 (API v6)
+02:42:25 [Verbose] Rest: GET voice/regions: 616.27 ms
+02:42:26 [Verbose] Rest: GET users/@me: 122.57 ms
+02:42:26 [Info] Gateway: Connecting
+02:42:26 [Verbose] Rest: GET gateway: 59.63 ms
+02:42:27 [Info] Gateway: Connected
+02:42:27 [Verbose] Gateway: Connected to Real Life
+02:42:27 [Info] Gateway: Ready
+02:43:07 [Verbose] Rest: POST channels/703058789506482309/messages: 259.68 ms
+02:43:07 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
+02:45:19 [Info] Discord: Discord.Net v2.2.0 (API v6)
+02:45:19 [Verbose] Rest: GET voice/regions: 596.37 ms
+02:45:20 [Verbose] Rest: GET users/@me: 134.64 ms
+02:45:20 [Info] Gateway: Connecting
+02:45:20 [Verbose] Rest: GET gateway: 58.45 ms
+02:45:21 [Info] Gateway: Connected
+02:45:21 [Verbose] Gateway: Connected to Real Life
+02:45:21 [Info] Gateway: Ready
+02:50:13 [Info] Discord: Discord.Net v2.2.0 (API v6)
+02:50:15 [Verbose] Rest: GET voice/regions: 1732.19 ms
+02:50:16 [Verbose] Rest: GET users/@me: 138.82 ms
+02:50:16 [Info] Gateway: Connecting
+02:50:16 [Verbose] Rest: GET gateway: 56.12 ms
+02:50:18 [Info] Gateway: Connected
+02:50:18 [Verbose] Gateway: Connected to Real Life
+02:50:18 [Info] Gateway: Ready
+02:50:29 [Verbose] Rest: POST channels/703058789506482309/messages: 165.32 ms
+02:50:29 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
+02:50:41 [Info] Discord: Discord.Net v2.2.0 (API v6)
+02:50:41 [Verbose] Rest: GET voice/regions: 551 ms
+02:50:41 [Verbose] Rest: GET users/@me: 116.41 ms
+02:50:41 [Info] Gateway: Connecting
+02:50:41 [Verbose] Rest: GET gateway: 59.05 ms
+02:50:42 [Info] Gateway: Connected
+02:50:42 [Verbose] Gateway: Connected to Real Life
+02:50:43 [Info] Gateway: Ready
+02:51:38 [Verbose] Rest: POST channels/703058789506482309/messages: 188.99 ms
+02:51:39 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
