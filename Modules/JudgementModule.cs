@@ -22,9 +22,10 @@ namespace AshBot.Modules
         public async Task CheckStats()
         {
             UserData userData = JudgementService._activeUserList.Single(item => item.Id == Context.User.Id);
-            await ReplyAsync(":exclamation:" + userData.Username +
-                ":exclamation:\n.Level: " + userData.Level +
-                "\n.XP:    " + userData.Xp+"\n.Goal:"+userData.XpTillLevel);
+            await ReplyAsync("> ***__[" + userData.Username + "]__***" +
+                "\n> .lvl *" + userData.Level +
+                "*\n> .xp *" + userData.Xp +
+                "*\n> .satus __*"+userData.GetRole()+"*__");
         }
 
         #region AngelCommands

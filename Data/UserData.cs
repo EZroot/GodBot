@@ -41,5 +41,19 @@ namespace AshBot.Data
             this.xp -= xp;
             Console.Out.WriteLineAsync($"{DateTime.UtcNow.ToString("hh:mm:ss")} [UserData] <" + this.username + "> lost " + xp + "XP! Now at " + this.xp);
         }
+
+        public string GetRole()
+        {
+            string result = "No role found.";
+            string[] words = this.role.Split(',');
+            foreach (string s in words)
+            {
+                if(s!= "@everyone" && s!= "Nitro Booster")
+                {
+                    result = s;
+                }
+            }
+            return result;
+        }
     }
 }
