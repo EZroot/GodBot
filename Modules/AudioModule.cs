@@ -53,5 +53,29 @@ namespace AshBot.Modules
             await JoinCmd();
             await _service.SendAudioAsync(Context.Guild, Context.Channel, song);
         }
+
+        [Command("maxsound", RunMode = RunMode.Async)]
+        public async Task MaxSound([Remainder] string song)
+        {
+            await _service.MaximizeSound(Context.Guild, Context.Channel);
+        }
+
+        [Command("minsound", RunMode = RunMode.Async)]
+        public async Task MinSound([Remainder] string song)
+        {
+            await _service.MinimizeSound(Context.Guild, Context.Channel);
+        }
+
+        [Command("normalsound", RunMode = RunMode.Async)]
+        public async Task NormalCmd([Remainder] string song)
+        {
+            await _service.NormalizeSound(Context.Guild, Context.Channel);
+        }
+
+        [Command("normalizesound", RunMode = RunMode.Async)]
+        public async Task NormalizeCmd([Remainder] string song)
+        {
+            await _service.NormalizeSound(Context.Guild, Context.Channel);
+        }
     }
 }

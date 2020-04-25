@@ -13,8 +13,9 @@ namespace AshBot.Services
     public class AudioService
     {
         private readonly ConcurrentDictionary<ulong, IAudioClient> ConnectedChannels = new ConcurrentDictionary<ulong, IAudioClient>();
-
         private string _musicDirectory = Path.Combine(AppContext.BaseDirectory, "usermusic");
+
+        private string _musicVolume = "volume = 0.5";
 
         public async Task JoinAudio(IGuild guild, IVoiceChannel target)
         {
@@ -63,7 +64,7 @@ namespace AshBot.Services
             if (ConnectedChannels.TryGetValue(guild.Id, out client))
             {
                 //await Log(LogSeverity.Debug, $"Starting playback of {path} in {guild.Name}");
-                using (var ffmpeg = CreateProcess(path))
+                using (var ffmpeg = CreateProcess(path, _musicVolume))
                 using (var stream = client.CreatePCMStream(AudioApplication.Music))
                 {
                     try { await ffmpeg.StandardOutput.BaseStream.CopyToAsync(stream); }
@@ -72,12 +73,30 @@ namespace AshBot.Services
             }
         }
 
-        private Process CreateProcess(string path)
+        public  Task MaximizeSound(IGuild guild, IMessageChannel channel)
+        {
+             _musicVolume = "volume = 1";
+            return Task.CompletedTask;
+        }
+
+        public  Task NormalizeSound(IGuild guild, IMessageChannel channel)
+        {
+             _musicVolume = "volume = 0.5";
+            return Task.CompletedTask;
+        }
+
+        public Task MinimizeSound(IGuild guild, IMessageChannel channel)
+        {
+            _musicVolume = "volume = 0.2";
+            return Task.CompletedTask;
+        }
+
+        private Process CreateProcess(string path, string volume)
         {
             return Process.Start(new ProcessStartInfo
             {
-                FileName = "ffmpeg.exe",
-                Arguments = $"-hide_banner -loglevel panic -i \"{path}\" -ac 2 -f s16le -ar 48000 pipe:1",
+                FileName = "ffmpeg",
+                Arguments = $"-hide_banner -loglevel panic -i \"{path}\" -filter:a \"{volume}\" -f wav -ar 48k pipe:1",
                 UseShellExecute = false,
                 RedirectStandardOutput = true
             });

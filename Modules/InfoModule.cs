@@ -19,13 +19,17 @@ namespace AshBot.Modules
         [Summary("Help message.")]
         public async Task SayHelp()
         {
-            string s = "[Info]" +
+            string s = "[Religion Info]" +
           "\n!stats - shows your current level and xp" +
           "\n!judge @user - to judge someone <cost 20xp>" +
           "\n-------------------------------------------------" +
           "\n[Music Info]" +
           "\n!play songname.mp3 - plays a song" +
           "\n!stop - stops playing music" +
+          "\n[NOTE Volume won't work till next song!]" +
+          "\n!minsound - min volume" +
+          "\n!maxsound - max volume" +
+          "\n!normalsound - normal volume" +
           "\n-------------------------------------------------" +
           "\n[Songs]\n- ";
 

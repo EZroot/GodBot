@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Threading.Tasks;
 using AshBot.Services;
 using Discord;
@@ -15,9 +16,11 @@ namespace AshBot
 
         public Startup(string[] args)
         {
-            var builder = new ConfigurationBuilder()        // Create a new instance of the config builder
-                .SetBasePath(AppContext.BaseDirectory)      // Specify the default location for the config file
-                .AddJsonFile("C:/Users/EZRoot/Desktop/Development/C#/config.json");                // Add this file to the configuration
+            string path = AppContext.BaseDirectory; 
+            //string newPath = Path.GetFullPath(Path.Combine(path, @"..\"));
+
+            var builder = new ConfigurationBuilder()         // Specify the default location for the config file
+                .AddJsonFile("/botbuild/Release/config.json");                // Add this file to the configuration
             Configuration = builder.Build();                // Build the configuration
         }
 

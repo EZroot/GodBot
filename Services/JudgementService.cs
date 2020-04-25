@@ -105,12 +105,12 @@ namespace AshBot.Services
             //-1
             if (msg.Content.Contains("warrior") || msg.Content.Contains("fag") || msg.Content.Contains("gay") || msg.Content.Contains("bitch") || msg.Content.Contains("omg") || msg.Content.Contains("omfg") || msg.Content.Contains("fk") || msg.Content.Contains("shit"))
             {
-                userdata.LoseXP(5);
+                userdata.LoseXP(52);
             }
             //-5
             if (msg.Content.Contains("gay") || msg.Content.Contains("autism") || msg.Content.Contains("autistic") || msg.Content.Contains("retard") || msg.Content.Contains("retarded") || msg.Content.Contains("dick"))
             {
-                userdata.LoseXP(8);
+                userdata.LoseXP(38);
             }
             //-50
             if (msg.Content.Contains("goddammit") || msg.Content.Contains("god damn") || msg.Content.Contains("god dam") || msg.Content.Contains("goddam") || msg.Content.Contains("goddamn"))
@@ -119,7 +119,7 @@ namespace AshBot.Services
             }
             if (msg.Content.Contains("Warrior") || msg.Content.Contains("Fag") || msg.Content.Contains("Gay") || msg.Content.Contains("Bitch") || msg.Content.Contains("Omg") || msg.Content.Contains("Fuck") || msg.Content.Contains("fuck") || msg.Content.Contains("shit") || msg.Content.Contains("ass"))
             {
-                userdata.LoseXP(4);
+                userdata.LoseXP(42);
             }
 
             //5
@@ -184,16 +184,16 @@ namespace AshBot.Services
 
         private async Task UpdateRoles(SocketUserMessage msg, SocketGuildUser user, int judgementRoleIndex)
         {
+            //Assign new role
+            await AddUserRole(msg, user, JUDGEMENT_ROLES[judgementRoleIndex]);
             //Remove previous roles from user
             for (int i = 0; i < JUDGEMENT_ROLES.Length; i++)
             {
-                if (CheckUserForRole(user, JUDGEMENT_ROLES[i]))
+                if (CheckUserForRole(user, JUDGEMENT_ROLES[i]) && JUDGEMENT_ROLES[judgementRoleIndex] != JUDGEMENT_ROLES[i])
                 {
                     await RemoveUserRole(msg, user, JUDGEMENT_ROLES[i]);
                 }
             }
-            //Assign new role
-            await AddUserRole(msg, user, JUDGEMENT_ROLES[judgementRoleIndex]);
         }
 
         private bool CheckUserForRole(SocketGuildUser user, string role)

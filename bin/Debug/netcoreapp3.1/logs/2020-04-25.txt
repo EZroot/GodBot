@@ -36,3 +36,23 @@
 12:26:05 [Info] Gateway: Ready
 12:26:25 [Verbose] Rest: DELETE guilds/308708637679812608/members/263098093824638979/roles/703393645017038858: 161.74 ms
 12:26:25 [Verbose] Rest: PUT guilds/308708637679812608/members/263098093824638979/roles/703393602495053884: 164.55 ms
+01:08:36 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:08:36 [Verbose] Rest: GET voice/regions: 573.64 ms
+01:08:37 [Verbose] Rest: GET users/@me: 95.49 ms
+01:08:37 [Info] Gateway: Connecting
+01:08:37 [Verbose] Rest: GET gateway: 46.39 ms
+01:08:38 [Info] Gateway: Connected
+01:08:38 [Verbose] Gateway: Connected to Real Life
+01:08:38 [Info] Gateway: Ready
+01:16:56 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:16:57 [Verbose] Rest: GET voice/regions: 591.06 ms
+01:16:57 [Verbose] Rest: GET users/@me: 103.6 ms
+01:16:57 [Info] Gateway: Connecting
+01:17:07 [Info] Discord: Discord.Net v2.2.0 (API v6)
+01:17:08 [Verbose] Rest: GET voice/regions: 536.55 ms
+01:17:08 [Verbose] Rest: GET users/@me: 125.5 ms
+01:17:08 [Info] Gateway: Connecting
+01:17:08 [Verbose] Rest: GET gateway: 57.8 ms
+01:17:09 [Info] Gateway: Connected
+01:17:09 [Verbose] Gateway: Connected to Real Life
+01:17:09 [Info] Gateway: Ready
