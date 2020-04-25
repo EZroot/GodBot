@@ -27,38 +27,127 @@ namespace AshBot.Modules
                 "\n.XP:    " + userData.Xp+"\n.Goal:"+userData.XpTillLevel);
         }
 
-        [Command("judge")]
-        [Summary("Judge em.")]
-        public async Task JudgeUser(SocketGuildUser user = null)
+        #region AngelCommands
+        [Command("slap")]
+        public async Task SlapUser(SocketGuildUser user = null)
         {
             var authorUser = Context.User;
-            string result = "Not enough XP. Use !help noob.";
+            string result = "Not an Angel. Use !help noob.";
 
-            if(user==null)
+            if (user == null)
             {
-                await ReplyAsync("Nobody to judge.");
+                await ReplyAsync("Nobody to slap.");
                 return;
             }
 
-            UserData userData   = JudgementService._activeUserList.Single(item => item.Id == user.Id);
+            UserData userData = JudgementService._activeUserList.Single(item => item.Id == user.Id);
             UserData authorData = JudgementService._activeUserList.Single(item => item.Id == authorUser.Id);
 
-            /*if (authorData.Xp > 20)
+            //make sure author is angle or above
+            if (authorData.Level >= 2)
             {
-                authorData.LoseXP(20);
-                userData.LoseXP(userData.Level * 9 + rand.Next(userData.Level + 4));
+                authorData.LoseXP(100);
+                userData.LoseXP((int)Math.Abs(userData.Level * 0.2f) + 25);
 
-                result = "You shall be JUDGED " + userData.Username +
-                    "! By the power of Runescape, I smite you for " + (userData.Level * 9 + rand.Next(userData.Level + 4)) +
-                    "\n dmg. Your xp is now " + userData.Xp + ".\n" + authorData.Username + " lost 20XP!";
-            }*/
-
-            //Update Roles IF!! a level changes
-            await UpdateRoles(user,1);
+                result = "Slappin' " + userData.Username +
+                    " around like the noob he is." + ((int)Math.Abs(userData.Level * 0.2f) + 25) +
+                    " dmg.\n Their XP is now " + userData.Xp + ".\n" + authorData.Username + " lost 20XP!";
+            }
             //Reply in chat
             await ReplyAsync(result);
         }
 
+        [Command("heal")]
+        public async Task HealUser(SocketGuildUser user = null)
+        {
+            var authorUser = Context.User;
+            string result = "Not an Angel. Use !help noob.";
+
+            if (user == null)
+            {
+                await ReplyAsync("Nobody to heal.");
+                return;
+            }
+
+            UserData userData = JudgementService._activeUserList.Single(item => item.Id == user.Id);
+            UserData authorData = JudgementService._activeUserList.Single(item => item.Id == authorUser.Id);
+
+            //make sure author is angle or above
+            if (authorData.Level >= 2)
+            {
+                authorData.LoseXP(100);
+                userData.AddXP((int)Math.Abs(userData.Level * 0.2f) + 25);
+
+                result = "Healed " + userData.Username +
+                    " for" + ((int)Math.Abs(userData.Level * 0.2f) + 25) +
+                    "XP!\n Their XP is now " + userData.Xp + ".\n" + authorData.Username + " sacrificed 100XP!";
+            }
+            //Reply in chat
+            await ReplyAsync(result);
+        }
+#endregion
+
+        #region ArchAngelCommands
+        [Command("judge")]
+        public async Task JudgeUser(SocketGuildUser user = null)
+        {
+            var authorUser = Context.User;
+            string result = "Not an ArchAngel. Use !help noob.";
+
+            if (user == null)
+            {
+                await ReplyAsync("Nobody to Judge.");
+                return;
+            }
+
+            UserData userData = JudgementService._activeUserList.Single(item => item.Id == user.Id);
+            UserData authorData = JudgementService._activeUserList.Single(item => item.Id == authorUser.Id);
+
+            //make sure author is angle or above
+            if (authorData.Level >= 1337)
+            {
+                authorData.LoseXP(200);
+                userData.LoseXP((int)Math.Abs(userData.Level * 0.2f) + 125);
+
+                result = "You shall be JUDGED " + userData.Username +
+                    "!\nYou owe the gods " + ((int)Math.Abs(userData.Level * 0.2f) + 125) +
+                    " XP.\n Your XP is now " + userData.Xp + ".\n" + authorData.Username + " lost 100XP!";
+            }
+            //Reply in chat
+            await ReplyAsync(result);
+        }
+
+        [Command("sacrifice")]
+        public async Task SacrificeUser(SocketGuildUser user = null)
+        {
+            var authorUser = Context.User;
+            string result = "Not an ArchAngel. Use !help noob.";
+
+            if (user == null)
+            {
+                await ReplyAsync("Nobody to heal.");
+                return;
+            }
+
+            UserData userData = JudgementService._activeUserList.Single(item => item.Id == user.Id);
+            UserData authorData = JudgementService._activeUserList.Single(item => item.Id == authorUser.Id);
+
+            //make sure author is angle or above
+            if (authorData.Level >= 1337)
+            {
+                authorData.LoseXP(200);
+                userData.AddXP((int)Math.Abs(userData.Level * 0.2f) + 125);
+
+                result = "Sacrificed self to heal " + userData.Username +
+                    " for" + ((int)Math.Abs(userData.Level * 0.2f) + 125) +
+                    "XP!\n Their XP is now " + userData.Xp + ".\n" + authorData.Username + " lost 100XP!";
+            }
+            //Reply in chat
+            await ReplyAsync(result);
+        }
+        #endregion
+
+        #region RoleControls
         /// <summary>
         /// Update the user roles based on JUDGEMENT_ROLES[index]
         /// </summary>
@@ -106,5 +195,6 @@ namespace AshBot.Modules
             var r = Context.Guild.Roles.FirstOrDefault(x => x.Name == role);
             await (user as IGuildUser).AddRoleAsync(r);
         }
+        #endregion
     }
 }
