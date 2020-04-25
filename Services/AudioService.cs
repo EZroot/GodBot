@@ -15,7 +15,7 @@ namespace AshBot.Services
         private readonly ConcurrentDictionary<ulong, IAudioClient> ConnectedChannels = new ConcurrentDictionary<ulong, IAudioClient>();
         private string _musicDirectory = Path.Combine(AppContext.BaseDirectory, "usermusic");
 
-        private string _musicVolume = "volume = 0.5";
+        private string _musicVolume = "volume = 0.1";
 
         public async Task JoinAudio(IGuild guild, IVoiceChannel target)
         {
@@ -75,19 +75,19 @@ namespace AshBot.Services
 
         public  Task MaximizeSound(IGuild guild, IMessageChannel channel)
         {
-             _musicVolume = "volume = 1";
+             _musicVolume = "volume = 0.5";
             return Task.CompletedTask;
         }
 
         public  Task NormalizeSound(IGuild guild, IMessageChannel channel)
         {
-             _musicVolume = "volume = 0.5";
+             _musicVolume = "volume = 0.1";
             return Task.CompletedTask;
         }
 
         public Task MinimizeSound(IGuild guild, IMessageChannel channel)
         {
-            _musicVolume = "volume = 0.2";
+            _musicVolume = "volume = 0.01";
             return Task.CompletedTask;
         }
 

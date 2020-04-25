@@ -54,7 +54,7 @@ namespace AshBot.Services
             UserData userData = new UserData(user.Id,
                 msg.Author.Username,
                 String.Join(",", user.Roles.Select(p => p.ToString()).ToArray()),
-                0,
+                1,
                 0,
                 1000);
 
@@ -155,12 +155,12 @@ namespace AshBot.Services
                 userdata.Level = -6;
                 await UpdateRoles(msg, user, 2);
             }
-            else if (userdata.Xp > -1000 && userdata.Xp <= 0)
+            else if (userdata.Xp > -1000 && userdata.Xp < 0)
             {
                 userdata.Level = 0;
                 await UpdateRoles(msg, user, 3);
             }
-            else if (userdata.Xp > 0 && userdata.Xp <= 1000)
+            else if (userdata.Xp >= 0 && userdata.Xp <= 1000)
             {
                 userdata.Level = 1;
                 await UpdateRoles(msg, user, 4);

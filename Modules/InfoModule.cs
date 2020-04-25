@@ -21,7 +21,7 @@ namespace AshBot.Modules
         {
             string s = "> ***__MOTD__***\n> Welcome to ***Church Of Sun***.\n> Here, you gain levels by being a good, nice boy." +
           "\n\n***__More Help__***" +
-          "\n```yaml\n!motd - message of the day\n!stats - shows your current level and xp\n!commands - shows commands you can use against other people\n!music - shows a list of available music commands\n!songs - shows a list of available songs to stream\n```"
+          "\n```bash\n!motd - message of the day\n!stats - shows your current level and xp\n!commands - shows commands you can use against other people\n!music - shows a list of available music commands\n!songs - shows a list of available songs to stream\n```"
             + "\n ***__Bot Info__***\n" +
            "```diff\n+ [Added] Audio streaming, Role-based commands for Angel/ArchAngel(s)\n```" +
            "```diff\n- [Coming Soon] Role based commands to use against other players and ruin their XP gains.\n```";
@@ -44,26 +44,12 @@ namespace AshBot.Modules
             await ReplyAsync(s);
         }
 
-        [Command("musiccommands")]
-        public async Task MusicCommands()
-        {
-            string s = "***__Music Info__***" +
-          "\n```fix\n!play songname.mp3 - plays a song\n!stop - stops playing music\n!minsound - min volume\n!maxsound - max volume\n!normalsound - normal volume\n```";
-            await ReplyAsync(s);
-        }
-
         [Command("music")]
         public async Task Musics()
         {
             string s = "***__Music Info__***" +
-          "\n```fix\n!play songname.mp3 - plays a song\n!stop - stops playing music\n!minsound - min volume\n!maxsound - max volume\n!normalsound - normal volume\n```"+
-          "\n***__Songs__***";
+          "\n```fix\n!songs - list of songs available \n!play songname.mp3 - plays a song\n!stop - stops playing music\n!minsound - min volume\n!maxsound - max volume\n!normalsound - normal volume\n```";
 
-            string[] list = Directory.GetFiles(Path.Combine(AppContext.BaseDirectory, "usermusic"));
-
-            s += "\n```css\n";
-            s += String.Join("\n- ", list.Select(file => Path.GetFileName(file)).ToArray());
-            s += "```";
             await ReplyAsync(s);
         }
 
