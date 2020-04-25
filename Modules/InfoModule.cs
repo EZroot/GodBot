@@ -19,23 +19,20 @@ namespace AshBot.Modules
         [Summary("Help message.")]
         public async Task SayHelp()
         {
-            string s = "[Religion Info]" +
-          "\n!stats - shows your current level and xp" +
-          "\n!judge @user - to judge someone <cost 20xp>" +
-          "\n-------------------------------------------------" +
-          "\n[Music Info]" +
-          "\n!play songname.mp3 - plays a song" +
-          "\n!stop - stops playing music" +
-          "\n[NOTE Volume won't work till next song!]" +
-          "\n!minsound - min volume" +
-          "\n!maxsound - max volume" +
-          "\n!normalsound - normal volume" +
-          "\n-------------------------------------------------" +
-          "\n[Songs]\n- ";
+            string s = "__***Information***__" +
+          "\n```diff\n+ Praise the sun! Welcome to church. Here, you gain levels by being a good boy.\n```" +
+          "\n```diff\n- [Coming Soon] Role based commands to use against other players and ruin their XP gains.\n```" +
+          "\n***__Commands__***" +
+          "\n```yaml\n!stats - shows your current level and xp\n!judge @user - to judge someone<cost 20xp >\n```" +
+          "\n***__Music Info__***" +
+          "\n```fix\n!play songname.mp3 - plays a song\n!stop - stops playing music\n!minsound - min volume\n!maxsound - max volume\n!normalsound - normal volume\n```" +
+          "\n***__Songs__***\n";
 
             string[] list = Directory.GetFiles(Path.Combine(AppContext.BaseDirectory, "usermusic"));
 
+            s += "```css";
             s += String.Join("\n- ", list.Select(file => Path.GetFileName(file)).ToArray());
+            s += "\n```";
             await ReplyAsync(s);
         }
     }
