@@ -33,12 +33,6 @@ namespace AshBot.Data
         public void AddXP(int xp)
         {
             this.xp += xp;
-            if(this.xp > this.xpTillLevel)
-            {
-                Console.Out.WriteLineAsync($"{DateTime.UtcNow.ToString("hh:mm:ss")} [UserData] <"+this.username+"> is now level "+this.level+"!");
-                this.level++;
-                this.xpTillLevel *= 1.6f;
-            }
             Console.Out.WriteLineAsync($"{DateTime.UtcNow.ToString("hh:mm:ss")} [UserData] <" + this.username + "> gained " + xp+"XP! Now at "+this.xp);
         }
 

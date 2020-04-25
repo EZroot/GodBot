@@ -811,3 +811,166 @@
 11:00:46 [Info] Audio #1: Connecting
 11:00:47 [Warning] Audio #1: Unknown OpCode (Hello)
 11:00:47 [Info] Audio #1: Connected
+11:05:36 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:05:37 [Verbose] Rest: GET voice/regions: 591.98 ms
+11:05:37 [Verbose] Rest: GET users/@me: 136.93 ms
+11:05:37 [Info] Gateway: Connecting
+11:05:37 [Verbose] Rest: GET gateway: 47.28 ms
+11:05:38 [Info] Gateway: Connected
+11:05:38 [Verbose] Gateway: Connected to Real Life
+11:05:38 [Info] Gateway: Ready
+11:05:42 [Verbose] Rest: POST channels/703058789506482309/messages: 253.8 ms
+11:05:42 [Verbose] Command: Executed "help" for EZRoot#7559 in Real Life/asdasd
+11:05:58 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:05:58 [Verbose] Rest: GET voice/regions: 482.75 ms
+11:05:59 [Verbose] Rest: GET users/@me: 140.91 ms
+11:05:59 [Info] Gateway: Connecting
+11:05:59 [Verbose] Rest: GET gateway: 48.93 ms
+11:05:59 [Info] Gateway: Connected
+11:06:00 [Verbose] Gateway: Connected to Real Life
+11:06:00 [Info] Gateway: Ready
+11:06:04 [Verbose] Rest: POST channels/703058789506482309/messages: 125.83 ms
+11:06:04 [Verbose] Command: Executed "help" for EZRoot#7559 in Real Life/asdasd
+11:06:38 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:06:39 [Verbose] Rest: GET voice/regions: 547.8 ms
+11:06:39 [Verbose] Rest: GET users/@me: 140.57 ms
+11:06:39 [Info] Gateway: Connecting
+11:06:39 [Verbose] Rest: GET gateway: 55.42 ms
+11:06:40 [Info] Gateway: Connected
+11:06:40 [Verbose] Gateway: Connected to Real Life
+11:06:40 [Info] Gateway: Ready
+11:06:51 [Verbose] Rest: POST channels/640357094054297627/messages: 255.9 ms
+11:06:51 [Verbose] Command: Executed "help" for EZRoot#7559 in Real Life/all-chat
+11:13:29 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:13:29 [Verbose] Rest: GET voice/regions: 605.94 ms
+11:13:29 [Verbose] Rest: GET users/@me: 122.47 ms
+11:13:29 [Info] Gateway: Connecting
+11:13:29 [Verbose] Rest: GET gateway: 62.4 ms
+11:13:30 [Info] Gateway: Connected
+11:13:30 [Verbose] Gateway: Connected to Real Life
+11:13:31 [Info] Gateway: Ready
+11:13:36 [Error] Command: Discord.Commands.CommandException: Error occurred executing "judge" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at AshBot.Modules.JudgementModule.<>c__DisplayClass2_0.<JudgeUser>b__0(UserData item) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\JudgementModule.cs:line 34
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at AshBot.Modules.JudgementModule.JudgeUser(SocketGuildUser user) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\JudgementModule.cs:line 34
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+11:13:36 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/asdasd
+11:13:42 [Verbose] Rest: POST channels/703058789506482309/messages: 147.76 ms
+11:13:42 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/asdasd
+11:14:28 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:14:29 [Verbose] Rest: GET voice/regions: 585.59 ms
+11:14:29 [Verbose] Rest: GET users/@me: 125.05 ms
+11:14:29 [Info] Gateway: Connecting
+11:14:29 [Verbose] Rest: GET gateway: 57.54 ms
+11:14:30 [Info] Gateway: Connected
+11:14:30 [Verbose] Gateway: Connected to Real Life
+11:14:30 [Info] Gateway: Ready
+11:14:31 [Error] Command: Discord.Commands.CommandException: Error occurred executing "judge" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at AshBot.Modules.JudgementModule.<>c__DisplayClass2_0.<JudgeUser>b__0(UserData item) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\JudgementModule.cs:line 34
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at AshBot.Modules.JudgementModule.JudgeUser(SocketGuildUser user) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\JudgementModule.cs:line 34
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+11:14:31 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/asdasd
+11:16:45 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:16:45 [Verbose] Rest: GET voice/regions: 518.21 ms
+11:16:45 [Verbose] Rest: GET users/@me: 100.61 ms
+11:16:45 [Info] Gateway: Connecting
+11:16:45 [Verbose] Rest: GET gateway: 54.55 ms
+11:16:46 [Info] Gateway: Connected
+11:16:46 [Verbose] Gateway: Connected to Real Life
+11:16:47 [Info] Gateway: Ready
+11:16:50 [Error] Command: Discord.Commands.CommandException: Error occurred executing "judge" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at AshBot.Modules.JudgementModule.CheckUserForRole(SocketGuildUser user, String role) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\JudgementModule.cs:line 58
+   at AshBot.Modules.JudgementModule.JudgeUser(SocketGuildUser user) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\JudgementModule.cs:line 51
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+11:16:50 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/asdasd
+11:19:05 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:19:06 [Verbose] Rest: GET voice/regions: 580.52 ms
+11:19:06 [Verbose] Rest: GET users/@me: 121.34 ms
+11:19:06 [Info] Gateway: Connecting
+11:19:06 [Verbose] Rest: GET gateway: 50.36 ms
+11:19:07 [Info] Gateway: Connected
+11:19:07 [Verbose] Gateway: Connected to Real Life
+11:19:07 [Verbose] Rest: POST channels/703058789506482309/messages: 141.84 ms
+11:19:07 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/asdasd
+11:19:07 [Info] Gateway: Ready
+11:27:01 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:27:01 [Verbose] Rest: GET voice/regions: 592.06 ms
+11:27:01 [Verbose] Rest: GET users/@me: 127.08 ms
+11:27:01 [Info] Gateway: Connecting
+11:27:02 [Verbose] Rest: GET gateway: 66.72 ms
+11:27:02 [Info] Gateway: Connected
+11:27:02 [Verbose] Gateway: Connected to Real Life
+11:27:03 [Info] Gateway: Ready
+11:27:09 [Verbose] Rest: POST channels/703058789506482309/messages: 146.46 ms
+11:27:09 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/asdasd
+11:27:13 [Verbose] Rest: DELETE guilds/308708637679812608/members/263098093824638979/roles/498140572364832768: 202.19 ms
+11:27:13 [Verbose] Rest: POST channels/703058789506482309/messages: 149.87 ms
+11:27:13 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/asdasd
+11:38:18 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:38:19 [Verbose] Rest: GET voice/regions: 620.41 ms
+11:38:19 [Verbose] Rest: GET users/@me: 109.79 ms
+11:38:19 [Info] Gateway: Connecting
+11:38:19 [Verbose] Rest: GET gateway: 59.86 ms
+11:38:20 [Info] Gateway: Connected
+11:38:20 [Verbose] Gateway: Connected to Real Life
+11:38:21 [Info] Gateway: Ready
+11:38:27 [Error] Command: Discord.Commands.CommandException: Error occurred executing "judge" for EZRoot#7559 in Real Life/asdasd.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Discord.Rest.UserHelper.AddRolesAsync(IGuildUser user, BaseDiscordClient client, IEnumerable`1 roles, RequestOptions options)
+   at AshBot.Modules.JudgementModule.AddUserRole(SocketGuildUser user, String role) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\JudgementModule.cs:line 92
+   at AshBot.Modules.JudgementModule.UpdateRoles(UserData userData, UserData authorData, SocketGuildUser user, SocketGuildUser authorUser) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\JudgementModule.cs:line 64
+   at AshBot.Modules.JudgementModule.JudgeUser(SocketGuildUser user) in C:\Users\EZRoot\Desktop\Development\C#\AshBot\AshBot\Modules\JudgementModule.cs:line 57
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   --- End of inner exception stack trace ---
+11:38:27 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/asdasd
+11:38:30 [Verbose] Rest: POST channels/703058789506482309/messages: 165.33 ms
+11:38:30 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/asdasd
+11:39:14 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:39:14 [Verbose] Rest: GET voice/regions: 506.57 ms
+11:39:15 [Verbose] Rest: GET users/@me: 130.9 ms
+11:39:15 [Info] Gateway: Connecting
+11:39:15 [Verbose] Rest: GET gateway: 48.12 ms
+11:39:16 [Info] Gateway: Connected
+11:39:16 [Verbose] Gateway: Connected to Real Life
+11:39:16 [Info] Gateway: Ready
+11:39:23 [Verbose] Rest: PUT guilds/308708637679812608/members/387269775266414592/roles/703389548666945703: 114.4 ms
+11:39:23 [Verbose] Rest: POST channels/703058789506482309/messages: 121.73 ms
+11:39:23 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/asdasd
+11:40:47 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:40:48 [Verbose] Rest: GET voice/regions: 502.21 ms
+11:40:48 [Verbose] Rest: GET users/@me: 130.3 ms
+11:40:48 [Info] Gateway: Connecting
+11:40:48 [Verbose] Rest: GET gateway: 52.4 ms
+11:40:49 [Info] Gateway: Connected
+11:40:49 [Verbose] Gateway: Connected to Real Life
+11:40:49 [Info] Gateway: Ready
+11:40:57 [Verbose] Rest: PUT guilds/308708637679812608/members/263098093824638979/roles/703389548666945703: 136.59 ms
+11:40:57 [Verbose] Rest: POST channels/703058789506482309/messages: 122 ms
+11:40:57 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/asdasd
+11:45:52 [Info] Discord: Discord.Net v2.2.0 (API v6)
+11:45:53 [Verbose] Rest: GET voice/regions: 571.18 ms
+11:45:53 [Verbose] Rest: GET users/@me: 109.74 ms
+11:45:53 [Info] Gateway: Connecting
+11:45:53 [Verbose] Rest: GET gateway: 47.35 ms
+11:45:54 [Info] Gateway: Connected
+11:45:54 [Verbose] Gateway: Connected to Real Life
+11:45:54 [Info] Gateway: Ready
+11:46:03 [Verbose] Rest: DELETE guilds/308708637679812608/members/263098093824638979/roles/703389548666945703: 122.87 ms
+11:46:03 [Verbose] Rest: PUT guilds/308708637679812608/members/263098093824638979/roles/703391146549837854: 108.96 ms
+11:46:03 [Verbose] Rest: POST channels/703058789506482309/messages: 140.45 ms
+11:46:03 [Verbose] Command: Executed "judge" for EZRoot#7559 in Real Life/asdasd

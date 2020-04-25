@@ -1,0 +1,38 @@
+12:21:00 [Info] Discord: Discord.Net v2.2.0 (API v6)
+12:21:01 [Verbose] Rest: GET voice/regions: 581.61 ms
+12:21:01 [Verbose] Rest: GET users/@me: 107.99 ms
+12:21:01 [Info] Gateway: Connecting
+12:21:01 [Verbose] Rest: GET gateway: 63.03 ms
+12:21:02 [Info] Gateway: Connected
+12:21:02 [Verbose] Gateway: Connected to Real Life
+12:21:03 [Info] Gateway: Ready
+12:21:10 [Verbose] Rest: DELETE guilds/308708637679812608/members/263098093824638979/roles/703391146549837854: 162.79 ms
+12:21:10 [Verbose] Rest: PUT guilds/308708637679812608/members/263098093824638979/roles/703393602495053884: 142.32 ms
+12:21:32 [Verbose] Rest: DELETE guilds/308708637679812608/members/263098093824638979/roles/703393602495053884: 229.46 ms
+12:21:32 [Verbose] Rest: PUT guilds/308708637679812608/members/263098093824638979/roles/703393602495053884: 187.03 ms
+12:21:33 [Verbose] Rest: POST channels/703058789506482309/messages: 748.31 ms
+12:21:33 [Verbose] Command: Executed "debug_addxp" for EZRoot#7559 in Real Life/asdasd
+12:21:33 [Verbose] Rest: DELETE guilds/308708637679812608/members/387269775266414592/roles/703389548666945703: 126.42 ms
+12:21:33 [Verbose] Rest: PUT guilds/308708637679812608/members/387269775266414592/roles/703393602495053884: 116.11 ms
+12:21:49 [Verbose] Rest: DELETE guilds/308708637679812608/members/263098093824638979/roles/703393602495053884: 115.15 ms
+12:21:49 [Verbose] Rest: POST channels/703058789506482309/messages: 140.27 ms
+12:21:49 [Verbose] Command: Executed "debug_addxp" for EZRoot#7559 in Real Life/asdasd
+12:21:49 [Verbose] Rest: PUT guilds/308708637679812608/members/263098093824638979/roles/703393645017038858: 137.94 ms
+12:21:49 [Verbose] Rest: DELETE guilds/308708637679812608/members/387269775266414592/roles/703393602495053884: 119.52 ms
+12:21:49 [Verbose] Rest: PUT guilds/308708637679812608/members/387269775266414592/roles/703393602495053884: 111.92 ms
+12:22:08 [Verbose] Rest: POST channels/703058789506482309/messages: 142.9 ms
+12:22:08 [Verbose] Command: Executed "stats" for EZRoot#7559 in Real Life/asdasd
+12:22:08 [Verbose] Rest: DELETE guilds/308708637679812608/members/263098093824638979/roles/703393645017038858: 166.94 ms
+12:22:08 [Verbose] Rest: PUT guilds/308708637679812608/members/263098093824638979/roles/703393645017038858: 130.06 ms
+12:22:09 [Verbose] Rest: DELETE guilds/308708637679812608/members/387269775266414592/roles/703393602495053884: 799.26 ms
+12:22:09 [Verbose] Rest: PUT guilds/308708637679812608/members/387269775266414592/roles/703393602495053884: 173.61 ms
+12:26:03 [Info] Discord: Discord.Net v2.2.0 (API v6)
+12:26:03 [Verbose] Rest: GET voice/regions: 445.93 ms
+12:26:03 [Verbose] Rest: GET users/@me: 141.2 ms
+12:26:04 [Info] Gateway: Connecting
+12:26:04 [Verbose] Rest: GET gateway: 55.39 ms
+12:26:04 [Info] Gateway: Connected
+12:26:04 [Verbose] Gateway: Connected to Real Life
+12:26:05 [Info] Gateway: Ready
+12:26:25 [Verbose] Rest: DELETE guilds/308708637679812608/members/263098093824638979/roles/703393645017038858: 161.74 ms
+12:26:25 [Verbose] Rest: PUT guilds/308708637679812608/members/263098093824638979/roles/703393602495053884: 164.55 ms

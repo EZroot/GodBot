@@ -22,16 +22,16 @@ namespace AshBot.Modules
             string s = "[Info]" +
           "\n!stats - shows your current level and xp" +
           "\n!judge @user - to judge someone <cost 20xp>" +
-          "\n------------------------" +
+          "\n-------------------------------------------------" +
           "\n[Music Info]" +
           "\n!play songname.mp3 - plays a song" +
           "\n!stop - stops playing music" +
-          "\n------------------------" +
-          "\n[Songs]\n";
+          "\n-------------------------------------------------" +
+          "\n[Songs]\n- ";
 
             string[] list = Directory.GetFiles(Path.Combine(AppContext.BaseDirectory, "usermusic"));
 
-            s += String.Join("\n-", list.Select(file => Path.GetFileName(file)).ToArray());
+            s += String.Join("\n- ", list.Select(file => Path.GetFileName(file)).ToArray());
             await ReplyAsync(s);
         }
     }
