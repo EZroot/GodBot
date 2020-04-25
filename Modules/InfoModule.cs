@@ -20,11 +20,12 @@ namespace AshBot.Modules
         public async Task SayHelp()
         {
             string s = "> ***__MOTD__***\n> Welcome to ***Church Of Sun***.\n> Here, you gain levels by being a good, nice boy." +
-          "\n\n***__LATEST UPDATE INFO__***" +
-          "```diff\n+ [Added] Audio streaming, Role-based commands for Angel/ArchAngel(s)\n```" +
-          "```diff\n- [Coming Soon] Role based commands to use against other players and ruin their XP gains.\n```" +
-          "\n***__More Help__***" +
-          "\n```yaml\n!motd - message of the day\n!stats - shows your current level and xp\n!commands - shows commands you can use against other people\n!music - shows a list of available music commands\n!songs - shows a list of available songs to stream\n```";
+          "\n\n***__More Help__***" +
+          "\n```yaml\n!motd - message of the day\n!stats - shows your current level and xp\n!commands - shows commands you can use against other people\n!music - shows a list of available music commands\n!songs - shows a list of available songs to stream\n```"
+            + "\n ***__Bot Info__***\n" +
+           "```diff\n+ [Added] Audio streaming, Role-based commands for Angel/ArchAngel(s)\n```" +
+           "```diff\n- [Coming Soon] Role based commands to use against other players and ruin their XP gains.\n```";
+
             await ReplyAsync(s);
         }
 

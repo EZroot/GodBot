@@ -23,9 +23,9 @@ namespace AshBot.Modules
         {
             UserData userData = JudgementService._activeUserList.Single(item => item.Id == Context.User.Id);
             await ReplyAsync("> __*User Stats -* ***" + userData.Username + "***__" +
-                "\n> __*.[Level]*__ ***" + userData.Level + "***" +
-                "\n> __*.[Exp]*__ ***" + userData.Xp + "***"+
-                "\n> __*.[Rank]*__ ***" +userData.GetRole()+"***");
+                "\n> __.[Level]__ ***" + userData.Level + "***" +
+                "\n> __.[Exp]__ ***" + userData.Xp + "***"+
+                "\n> __.[Rank]__ ***" +userData.GetRole()+"***");
         }
 
         #region AngelCommands

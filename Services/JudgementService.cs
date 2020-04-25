@@ -54,7 +54,7 @@ namespace AshBot.Services
             UserData userData = new UserData(user.Id,
                 msg.Author.Username,
                 String.Join(",", user.Roles.Select(p => p.ToString()).ToArray()),
-                1,
+                0,
                 0,
                 1000);
 
@@ -105,37 +105,37 @@ namespace AshBot.Services
             //-1
             if (msg.Content.Contains("warrior") || msg.Content.Contains("fag") || msg.Content.Contains("gay") || msg.Content.Contains("bitch") || msg.Content.Contains("omg") || msg.Content.Contains("omfg") || msg.Content.Contains("fk") || msg.Content.Contains("shit"))
             {
-                userdata.LoseXP(52);
+                userdata.LoseXP(12);
             }
             //-5
             if (msg.Content.Contains("gay") || msg.Content.Contains("autism") || msg.Content.Contains("autistic") || msg.Content.Contains("retard") || msg.Content.Contains("retarded") || msg.Content.Contains("dick"))
             {
-                userdata.LoseXP(38);
+                userdata.LoseXP(28);
             }
             //-50
             if (msg.Content.Contains("goddammit") || msg.Content.Contains("god damn") || msg.Content.Contains("god dam") || msg.Content.Contains("goddam") || msg.Content.Contains("goddamn"))
             {
-                userdata.LoseXP(52);
+                userdata.LoseXP(12);
             }
             if (msg.Content.Contains("Warrior") || msg.Content.Contains("Fag") || msg.Content.Contains("Gay") || msg.Content.Contains("Bitch") || msg.Content.Contains("Omg") || msg.Content.Contains("Fuck") || msg.Content.Contains("fuck") || msg.Content.Contains("shit") || msg.Content.Contains("ass"))
             {
-                userdata.LoseXP(42);
+                userdata.LoseXP(12);
             }
 
             //5
-            if (msg.Content.Contains("beautiful") || msg.Content.Contains("cute") || msg.Content.Contains("trap") || msg.Content.Contains("christian") || msg.Content.Contains("amen") || msg.Content.Contains("holy"))
+            if (msg.Content.Contains("wifi") || msg.Content.Contains("space") || msg.Content.Contains("elon") || msg.Content.Contains("rocket") || msg.Content.Contains("good") || msg.Content.Contains("games") || msg.Content.Contains("thankfully") || msg.Content.Contains("beautifully") || msg.Content.Contains("beautiful") || msg.Content.Contains("cute") || msg.Content.Contains("trap") || msg.Content.Contains("christian") || msg.Content.Contains("amen") || msg.Content.Contains("holy"))
             {
-                userdata.AddXP(86);
+                userdata.AddXP(24);
             }
             //10
             if (msg.Content.Contains("love") || msg.Content.Contains("thanks") || msg.Content.Contains("thank you") || msg.Content.Contains("thank u"))
             {
-                userdata.AddXP(122);
+                userdata.AddXP(82);
             }
             //20
-            if (msg.Content.Contains("i love you"))
+            if (msg.Content.Contains("i love you") || msg.Content.Contains("praise the sun") || msg.Content.Contains("Praise the sun"))
             {
-                userdata.AddXP(213);
+                userdata.AddXP(113);
             }
 
 
