@@ -47,7 +47,7 @@ namespace AshBot.Modules
             //make sure author is angle or above
             if (authorData.Level >= 1)
             {
-                if (ThrowDice(1))
+                if (ThrowDice(2))
                 {
                     authorData.LoseXP(50);
                     userData.LoseXP((int)Math.Abs(userData.Level * 0.2f) + 2);
@@ -84,7 +84,7 @@ namespace AshBot.Modules
             //make sure author is angle or above
             if (authorData.Level >= 1)
             {
-                if (ThrowDice(1))
+                if (ThrowDice(2))
                 {
                     authorData.LoseXP(50);
                     userData.AddXP((int)Math.Abs(userData.Level * 0.2f) + 25);
@@ -123,7 +123,7 @@ namespace AshBot.Modules
             //make sure author is pastor or above
             if (authorData.Level >= 2)
             {
-                if (ThrowDice(1))
+                if (ThrowDice(2))
                 {
                     authorData.LoseXP(100);
                     userData.LoseXP((int)Math.Abs(userData.Level * 0.2f) + 55);
@@ -160,7 +160,7 @@ namespace AshBot.Modules
             //make sure author is angle or above
             if (authorData.Level >= 2)
             {
-                if (ThrowDice(1))
+                if (ThrowDice(2))
                 {
                     authorData.LoseXP(100);
                     userData.AddXP((int)Math.Abs(userData.Level * 0.2f) + 55);
@@ -199,7 +199,7 @@ namespace AshBot.Modules
             //make sure author is angle or above
             if (authorData.Level >= 3)
             {
-                if (ThrowDice(1))
+                if (ThrowDice(2))
                 {
                     authorData.LoseXP(100);
                     userData.LoseXP((int)Math.Abs(userData.Level * 0.2f) + 125);
@@ -236,7 +236,7 @@ namespace AshBot.Modules
             //make sure author is angle or above
             if (authorData.Level >= 3)
             {
-                if (ThrowDice(1))
+                if (ThrowDice(2))
                 {
                     authorData.LoseXP(100);
                     userData.AddXP((int)Math.Abs(userData.Level * 0.2f) + 125);
@@ -275,7 +275,7 @@ namespace AshBot.Modules
             //make sure author is angle or above
             if (authorData.Level >= 1337)
             {
-                if (ThrowDice(1))
+                if (ThrowDice(2))
                 {
                     authorData.LoseXP(100);
                     userData.LoseXP((int)Math.Abs(userData.Level * 0.2f) + 145);
@@ -313,7 +313,7 @@ namespace AshBot.Modules
             //make sure author is angle or above
             if (authorData.Level >= 1337)
             {
-                if (ThrowDice(1))
+                if (ThrowDice(2))
                 {
                     authorData.LoseXP(100);
                     userData.AddXP((int)Math.Abs(userData.Level * 0.2f) + 145);
@@ -356,7 +356,7 @@ namespace AshBot.Modules
             //make sure author is angle or above
             if (authorData.Level >= 9000)
             {
-                if (ThrowDice(1))
+                if (ThrowDice(2))
                 {
                     authorData.LoseXP(200);
                     userData.LoseXP((int)Math.Abs(userData.Level * 0.2f) + 125);
@@ -393,7 +393,7 @@ namespace AshBot.Modules
             //make sure author is angle or above
             if (authorData.Level >= 9000)
             {
-                if (ThrowDice(1))
+                if (ThrowDice(2))
                 {
                     authorData.LoseXP(200);
                     userData.AddXP((int)Math.Abs(userData.Level * 0.2f) + 125);

@@ -10,7 +10,7 @@ namespace AshBot.Services
 {
     public class CommandHandler
     {
-        private readonly DiscordSocketClient _discord;
+        public static DiscordSocketClient _discord;
         private readonly CommandService _commands;
         private readonly IConfigurationRoot _config;
         private readonly IServiceProvider _provider;

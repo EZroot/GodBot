@@ -54,7 +54,7 @@ namespace AshBot.Services
             UserData userData = new UserData(user.Id,
                 msg.Author.Username,
                 String.Join(",", user.Roles.Select(p => p.ToString()).ToArray()),
-                1,
+                0,
                 0,
                 1000);
 
@@ -138,66 +138,79 @@ namespace AshBot.Services
                 userdata.AddXP(113);
             }
 
-
             //Level Update
             if(userdata.Xp > -4000 && userdata.Xp <= -3000)
             {
                 userdata.Level = -666;
+                userdata.Role = JUDGEMENT_ROLES[0];
                 await UpdateRoles(msg, user, 0);
             }
             else if (userdata.Xp > -3000 && userdata.Xp <= -2000)
             {
                 userdata.Level = -66;
+                userdata.Role = JUDGEMENT_ROLES[1];
                 await UpdateRoles(msg, user, 1);
             }
             else if (userdata.Xp > -2000 && userdata.Xp <= -1000)
             {
                 userdata.Level = -6;
+                userdata.Role = JUDGEMENT_ROLES[2];
                 await UpdateRoles(msg, user, 2);
             }
             else if (userdata.Xp > -1000 && userdata.Xp <= -500)
             {
                 userdata.Level = -1;
+                userdata.Role = JUDGEMENT_ROLES[3];
                 await UpdateRoles(msg, user, 3);
             }
-            else if (userdata.Xp > -500 && userdata.Xp < 0) //repented
+            else if (userdata.Xp > -500 && userdata.Xp < 50) //repented
             {
                 userdata.Level = 0;
+                userdata.Role = JUDGEMENT_ROLES[4];
                 await UpdateRoles(msg, user, 4);
             }
-            else if (userdata.Xp >= 0 && userdata.Xp <= 300) //saved
+            else if (userdata.Xp >= 50 && userdata.Xp <= 300) //saved
             {
                 userdata.Level = 1;
+                userdata.Role = JUDGEMENT_ROLES[5];
+
                 await UpdateRoles(msg, user, 5);
             }
             else if (userdata.Xp > 300 && userdata.Xp <= 500) //pastor
             {
                 userdata.Level = 2;
+                userdata.Role = JUDGEMENT_ROLES[6];
+
                 await UpdateRoles(msg, user, 6);
             }
             else if (userdata.Xp > 500 && userdata.Xp <= 1000) //priest
             {
                 userdata.Level = 3;
+                userdata.Role = JUDGEMENT_ROLES[7];
                 await UpdateRoles(msg, user, 7);
             }
             else if (userdata.Xp > 1000 && userdata.Xp <= 2000) //high priest
             {
                 userdata.Level = 4;
+                userdata.Role = JUDGEMENT_ROLES[8];
                 await UpdateRoles(msg, user, 8);
             }
             else if (userdata.Xp > 2000 && userdata.Xp <= 3000) //angle
             {
                 userdata.Level = 1337;
+                userdata.Role = JUDGEMENT_ROLES[9];
                 await UpdateRoles(msg, user, 9);
             }
             else if (userdata.Xp > 3000 && userdata.Xp <= 4000) //archangle
             {
                 userdata.Level = 9001;
+                userdata.Role = JUDGEMENT_ROLES[10];
                 await UpdateRoles(msg, user, 10);
             }
             else if (userdata.Xp > 4000 && userdata.Xp <= 5000) //demigod
             {
                 userdata.Level = int.MaxValue;
+                userdata.Role = JUDGEMENT_ROLES[11];
                 await UpdateRoles(msg, user, 11);
             }
         }

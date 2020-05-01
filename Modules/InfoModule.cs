@@ -1,4 +1,6 @@
-﻿using Discord.Commands;
+﻿using AshBot.Services;
+using Discord.Commands;
+using Discord.WebSocket;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -19,6 +21,7 @@ namespace AshBot.Modules
         [Summary("Help message.")]
         public async Task SayHelp()
         {
+            var channel = CommandHandler._discord.GetChannel(703684513502593099) as SocketTextChannel; //gets channel to send message in
             string s = "> ***__MOTD__***\n> Welcome to ***Church Of Sun***.\n> Here, you gain levels by being active in church. You get !commands based on your role that you may use against other players." +
           "\n\n***__More Help__***" +
           "\n```bash\n!motd - message of the day\n!stats - shows your current level and xp\n!commands - shows commands you can use against other people\n!music - shows a list of available music commands\n!songs - shows a list of available songs to stream\n```"
@@ -26,7 +29,8 @@ namespace AshBot.Modules
            "```diff\n+ [Added] Commands for Saved, Pastor, Priest, Angel, Archangle Added!\n```" +
            "```diff\n+ [Added] More Roles!\n```" +
            "```diff\n- [Coming Soon] Better level system, more commands with stronger results.\n```";
-
+            await channel.SendMessageAsync(s);
+            s = "Check " + channel.Mention;
             await ReplyAsync(s);
         }
 
@@ -40,68 +44,82 @@ namespace AshBot.Modules
         [Command("commands")]
         public async Task Commands()
         {
+            var channel = CommandHandler._discord.GetChannel(703684513502593099) as SocketTextChannel; //gets channel to send message in
+
             string s = "***__Commands__***" +
             "\n```yaml\n!stats - shows your current level and xp\n```";
+            await channel.SendMessageAsync(s);
+            s = "Check "+channel.Mention;
             await ReplyAsync(s);
-            await SavedCmds();
-            await PastorCMD();
-            await PriestCMD();
-            await AngelCMD();
-            await ArchAngelCMD();
         }
 
         [Command("savedhelp")]
         public async Task SavedCmds()
         {
+            var channel = CommandHandler._discord.GetChannel(703684513502593099) as SocketTextChannel; //gets channel to send message in
             string s = "***__Saved Commands__***" +
             "\n```yaml\n!belittle @user\n!spread lies about @user\n```";
+            await channel.SendMessageAsync(s);
+            s = "Check " + channel.Mention;
             await ReplyAsync(s);
         }
 
         [Command("pastorhelp")]
         public async Task PastorCMD()
         {
+            var channel = CommandHandler._discord.GetChannel(703684513502593099) as SocketTextChannel; //gets channel to send message in
+
             string s = "***__Pastor Commands__***" +
             "\n```yaml\n!chastize @user\n!preach @user\n```";
-            await ReplyAsync(s);
+            await channel.SendMessageAsync(s);
         }
 
         [Command("priesthelp")]
         public async Task PriestCMD()
         {
+            var channel = CommandHandler._discord.GetChannel(703684513502593099) as SocketTextChannel; //gets channel to send message in
+
             string s = "***__Priest Commands__***" +
             "\n```yaml\n!condemn @user\n!forgive @user\n```";
-            await ReplyAsync(s);
+            await channel.SendMessageAsync(s);
         }
 
         [Command("anglehelp")]
         public async Task AngelCMD()
         {
+            var channel = CommandHandler._discord.GetChannel(703684513502593099) as SocketTextChannel; //gets channel to send message in
+
             string s = "***__Angel Commands__***" +
             "\n```yaml\n!slap @user\n!heal @user\n```";
-            await ReplyAsync(s);
+            await channel.SendMessageAsync(s);
         }
 
         [Command("archanglehelp")]
         public async Task ArchAngelCMD()
         {
+            var channel = CommandHandler._discord.GetChannel(703684513502593099) as SocketTextChannel; //gets channel to send message in
+
             string s = "***__ArchAngel Commands__***" +
             "\n```yaml\n!judge @user\n!sacrifice @user\n```";
-            await ReplyAsync(s);
+            await channel.SendMessageAsync(s);
         }
 
         [Command("music")]
         public async Task Musics()
         {
+            var channel = CommandHandler._discord.GetChannel(501067253999992832) as SocketTextChannel; //gets channel to send message in
             string s = "***__Music Info__***" +
           "\n```fix\n!songs - list of songs available \n!play songname.mp3 - plays a song\n!stop - stops playing music\n!minsound - min volume\n!maxsound - max volume\n!normalsound - normal volume\n```";
-
+            await channel.SendMessageAsync(s);
+            s = "Check " + channel.Mention;
             await ReplyAsync(s);
         }
 
         [Command("songs")]
         public async Task SongList()
         {
+
+            var channel = CommandHandler._discord.GetChannel(501067253999992832) as SocketTextChannel; //gets channel to send message in
             string s = "***__Songs__***";
 
             string[] list = Directory.GetFiles(Path.Combine(AppContext.BaseDirectory, "usermusic"));
@@ -109,6 +127,8 @@ namespace AshBot.Modules
             s += "\n```css\n- ";
             s += String.Join("\n- ", list.Select(file => Path.GetFileName(file)).ToArray());
             s += "```";
+            await channel.SendMessageAsync(s);
+            s = "Check " + channel.Mention;
             await ReplyAsync(s);
         }
     }
