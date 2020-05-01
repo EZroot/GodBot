@@ -47,9 +47,15 @@ namespace AshBot.Modules
             var channel = CommandHandler._discord.GetChannel(703684513502593099) as SocketTextChannel; //gets channel to send message in
 
             string s = "***__Commands__***" +
-            "\n```yaml\n!stats - shows your current level and xp\n```";
+            "\n```yaml\n!stats - shows your current level and xp\n" +
+            "\n!savedhelp   - command list for role\n" +
+            "\n!pastorhelp  - command list for role\n" +
+            "\n!priesthelp  - command list for role\n" +
+            "\n!anglehelp   - command list for role\n" +
+            "\n!archanglehelp - command list for role\n" +
+            "```";
             await channel.SendMessageAsync(s);
-            s = "Check "+channel.Mention;
+            s = "Check " + channel.Mention;
             await ReplyAsync(s);
         }
 
