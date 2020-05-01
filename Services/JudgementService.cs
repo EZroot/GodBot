@@ -14,7 +14,7 @@ namespace AshBot.Services
 {
     public class JudgementService
     {
-        private readonly string[] JUDGEMENT_ROLES = { "Satan", "Archdemon", "Demon", "Unrepented", "Repented", "Angel", "Archangel", "DemiGod" };
+        private readonly string[] JUDGEMENT_ROLES = { "Satan", "Archdemon", "Demon", "Unrepented", "Repented", "Saved", "Pastor", "Priest", "High Priest", "Angel", "Archangel", "DemiGod" };
 
         private readonly DiscordSocketClient _discord;
         private readonly CommandService _commands;
@@ -123,7 +123,7 @@ namespace AshBot.Services
             }
 
             //5
-            if (msg.Content.Contains("wifi") || msg.Content.Contains("space") || msg.Content.Contains("elon") || msg.Content.Contains("rocket") || msg.Content.Contains("good") || msg.Content.Contains("games") || msg.Content.Contains("thankfully") || msg.Content.Contains("beautifully") || msg.Content.Contains("beautiful") || msg.Content.Contains("cute") || msg.Content.Contains("trap") || msg.Content.Contains("christian") || msg.Content.Contains("amen") || msg.Content.Contains("holy"))
+            if (msg.Content.Contains("boi") || msg.Content.Contains("no u") || msg.Content.Contains("aliens") || msg.Content.Contains("alien") || msg.Content.Contains("wifi") || msg.Content.Contains("space") || msg.Content.Contains("elon") || msg.Content.Contains("rocket") || msg.Content.Contains("good") || msg.Content.Contains("games") || msg.Content.Contains("thankfully") || msg.Content.Contains("beautifully") || msg.Content.Contains("beautiful") || msg.Content.Contains("cute") || msg.Content.Contains("trap") || msg.Content.Contains("christian") || msg.Content.Contains("amen") || msg.Content.Contains("holy"))
             {
                 userdata.AddXP(24);
             }
@@ -155,30 +155,50 @@ namespace AshBot.Services
                 userdata.Level = -6;
                 await UpdateRoles(msg, user, 2);
             }
-            else if (userdata.Xp > -1000 && userdata.Xp < 0)
+            else if (userdata.Xp > -1000 && userdata.Xp <= -500)
             {
-                userdata.Level = 0;
+                userdata.Level = -1;
                 await UpdateRoles(msg, user, 3);
             }
-            else if (userdata.Xp >= 0 && userdata.Xp <= 1000)
+            else if (userdata.Xp > -500 && userdata.Xp < 0) //repented
             {
-                userdata.Level = 1;
+                userdata.Level = 0;
                 await UpdateRoles(msg, user, 4);
             }
-            else if (userdata.Xp > 1000 && userdata.Xp <= 2000)
+            else if (userdata.Xp >= 0 && userdata.Xp <= 300) //saved
             {
-                userdata.Level = 2;
+                userdata.Level = 1;
                 await UpdateRoles(msg, user, 5);
             }
-            else if (userdata.Xp > 2000 && userdata.Xp <= 3000)
+            else if (userdata.Xp > 300 && userdata.Xp <= 500) //pastor
             {
-                userdata.Level = 1337;
+                userdata.Level = 2;
                 await UpdateRoles(msg, user, 6);
             }
-            else if (userdata.Xp > 3000 && userdata.Xp <= 4000)
+            else if (userdata.Xp > 500 && userdata.Xp <= 1000) //priest
             {
-                userdata.Level = 9000;
+                userdata.Level = 3;
                 await UpdateRoles(msg, user, 7);
+            }
+            else if (userdata.Xp > 1000 && userdata.Xp <= 2000) //high priest
+            {
+                userdata.Level = 4;
+                await UpdateRoles(msg, user, 8);
+            }
+            else if (userdata.Xp > 2000 && userdata.Xp <= 3000) //angle
+            {
+                userdata.Level = 1337;
+                await UpdateRoles(msg, user, 9);
+            }
+            else if (userdata.Xp > 3000 && userdata.Xp <= 4000) //archangle
+            {
+                userdata.Level = 9001;
+                await UpdateRoles(msg, user, 10);
+            }
+            else if (userdata.Xp > 4000 && userdata.Xp <= 5000) //demigod
+            {
+                userdata.Level = int.MaxValue;
+                await UpdateRoles(msg, user, 11);
             }
         }
 
