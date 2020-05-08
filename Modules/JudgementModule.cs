@@ -148,25 +148,45 @@ namespace AshBot.Modules
             var authorUser = Context.User;
             string result = "Not a Pastor. Use !help noob.";
 
+            UserData authorData = JudgementService._activeUserList.Single(item => item.Id == authorUser.Id);
+
             if (user == null)
             {
-                await ReplyAsync("Nobody to preach to.");
+                UserData[] userList = JudgementService._activeUserList.ToArray();
+                //make sure author is angle or above
+                if (authorData.Level >= 2)
+                {
+                    if (ThrowDice(2))
+                    {
+                        authorData.AddXP(25);
+                        foreach (UserData d in userList)
+                        {
+                            d.AddXP((int)Math.Abs(d.Level * 0.2f) + 55);
+                        }
+                        result = "With authority you preach to EVERYBODY in discord. They gain 25XP!\n" + authorData.Username + " lost 100XP!";
+                    }
+                    else
+                    {
+                        authorData.LoseXP(300);
+                        result = "You failed your god and said blasphemy, " + authorData.Username + "! Wrecked for 300XP!";
+                    }
+                }
+                await ReplyAsync(result);
                 return;
             }
 
             UserData userData = JudgementService._activeUserList.Single(item => item.Id == user.Id);
-            UserData authorData = JudgementService._activeUserList.Single(item => item.Id == authorUser.Id);
 
             //make sure author is angle or above
             if (authorData.Level >= 2)
             {
                 if (ThrowDice(2))
                 {
-                    authorData.LoseXP(100);
+                    authorData.AddXP(100);
                     userData.AddXP((int)Math.Abs(userData.Level * 0.2f) + 55);
 
                     result = "With authority you preach to " + userData.Username +
-                        " and they lose " + ((int)Math.Abs(userData.Level * 0.2f) + 55) +
+                        " and they gain " + ((int)Math.Abs(userData.Level * 0.2f) + 55) +
                         "XP!\n Their XP is now " + userData.Xp + ".\n" + authorData.Username + " lost 100XP!";
                 }
                 else
@@ -210,8 +230,8 @@ namespace AshBot.Modules
                 }
                 else
                 {
-                    authorData.LoseXP(300);
-                    result = "Judgment has been betowed upon YOU instead, " + authorData.Username + ". The Gods punish you 300XP!";
+                    authorData.LoseXP(150);
+                    result = "You have been condemned for treason, " + authorData.Username + ". The Gods punish you 150XP!";
                 }
             }
             //Reply in chat
@@ -238,17 +258,17 @@ namespace AshBot.Modules
             {
                 if (ThrowDice(2))
                 {
-                    authorData.LoseXP(100);
+                    authorData.AddXP(100);
                     userData.AddXP((int)Math.Abs(userData.Level * 0.2f) + 125);
 
-                    result = "Sacrificed self to heal " + userData.Username +
-                        " for" + ((int)Math.Abs(userData.Level * 0.2f) + 125) +
+                    result = "You've forgiven " + userData.Username +
+                        " for " + ((int)Math.Abs(userData.Level * 0.2f) + 125) +
                         "XP!\n Their XP is now " + userData.Xp + ".\n" + authorData.Username + " lost 100XP!";
                 }
                 else
                 {
                     authorData.LoseXP(300);
-                    result = "How sweet of you to sacrifice yourself to your lord, " + authorData.Username + ". Wrecked for 300XP!";
+                    result = "Forgive you, I shall not, " + authorData.Username + ". Wrecked for 300XP!";
                 }
             }
             //Reply in chat
@@ -315,12 +335,12 @@ namespace AshBot.Modules
             {
                 if (ThrowDice(2))
                 {
-                    authorData.LoseXP(100);
+                    authorData.LoseXP(50);
                     userData.AddXP((int)Math.Abs(userData.Level * 0.2f) + 145);
 
                     result = "Healed " + userData.Username +
                         " for" + ((int)Math.Abs(userData.Level * 0.2f) + 145) +
-                        "XP!\n Their XP is now " + userData.Xp + ".\n" + authorData.Username + " sacrificed 100XP!";
+                        "XP!\n Their XP is now " + userData.Xp + ".\n" + authorData.Username + " sacrificed 50XP!";
                 }
                 else
                 {
@@ -358,17 +378,17 @@ namespace AshBot.Modules
             {
                 if (ThrowDice(2))
                 {
-                    authorData.LoseXP(200);
+                    authorData.LoseXP(50);
                     userData.LoseXP((int)Math.Abs(userData.Level * 0.2f) + 125);
 
                     result = "You shall be JUDGED " + userData.Username +
                         "!\nYou owe the gods " + ((int)Math.Abs(userData.Level * 0.2f) + 125) +
-                        " XP.\n Your XP is now " + userData.Xp + ".\n" + authorData.Username + " lost 100XP!";
+                        " XP.\n Your XP is now " + userData.Xp + ".\n" + authorData.Username + " lost 50XP!";
                 }
                 else
                 {
-                    authorData.LoseXP(300);
-                    result = "Judgment has been betowed upon YOU instead, "+authorData.Username +". The Gods punish you 300XP!";
+                    authorData.LoseXP(150);
+                    result = "Judgment has been betowed upon YOU instead, "+authorData.Username +". The Gods punish you 150XP!";
                 }
             }
             //Reply in chat
@@ -395,17 +415,17 @@ namespace AshBot.Modules
             {
                 if (ThrowDice(2))
                 {
-                    authorData.LoseXP(200);
+                    authorData.LoseXP(50);
                     userData.AddXP((int)Math.Abs(userData.Level * 0.2f) + 125);
 
                     result = "Sacrificed self to heal " + userData.Username +
                         " for" + ((int)Math.Abs(userData.Level * 0.2f) + 125) +
-                        "XP!\n Their XP is now " + userData.Xp + ".\n" + authorData.Username + " lost 100XP!";
+                        "XP!\n Their XP is now " + userData.Xp + ".\n" + authorData.Username + " lost 50XP!";
                 }
                 else
                 {
-                    authorData.LoseXP(300);
-                    result = "How sweet of you to sacrifice yourself to your lord, "+authorData.Username+". Wrecked for 300XP!";
+                    authorData.LoseXP(150);
+                    result = "How sweet of you to sacrifice yourself to your lord, "+authorData.Username+". Wrecked for 150XP!";
                 }
             }
             //Reply in chat
@@ -465,7 +485,7 @@ namespace AshBot.Modules
 
         private bool ThrowDice(int diceSides)
         {
-            return (rand.Next(0, diceSides) == 0 ? true : false); 
+            return (rand.Next(0, diceSides) == 0 || rand.Next(0,diceSides) == 1 ? true : false); 
         }
     }
 }

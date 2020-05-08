@@ -62,52 +62,41 @@ namespace AshBot.Modules
         [Command("savedhelp")]
         public async Task SavedCmds()
         {
-            var channel = CommandHandler._discord.GetChannel(703684513502593099) as SocketTextChannel; //gets channel to send message in
             string s = "***__Saved Commands__***" +
             "\n```yaml\n!belittle @user\n!spread lies about @user\n```";
-            await channel.SendMessageAsync(s);
-            s = "Check " + channel.Mention;
             await ReplyAsync(s);
         }
 
         [Command("pastorhelp")]
         public async Task PastorCMD()
         {
-            var channel = CommandHandler._discord.GetChannel(703684513502593099) as SocketTextChannel; //gets channel to send message in
-
             string s = "***__Pastor Commands__***" +
             "\n```yaml\n!chastize @user\n!preach @user\n```";
-            await channel.SendMessageAsync(s);
+            await ReplyAsync(s);
         }
 
         [Command("priesthelp")]
         public async Task PriestCMD()
         {
-            var channel = CommandHandler._discord.GetChannel(703684513502593099) as SocketTextChannel; //gets channel to send message in
-
             string s = "***__Priest Commands__***" +
             "\n```yaml\n!condemn @user\n!forgive @user\n```";
-            await channel.SendMessageAsync(s);
+            await ReplyAsync(s);
         }
 
         [Command("anglehelp")]
         public async Task AngelCMD()
         {
-            var channel = CommandHandler._discord.GetChannel(703684513502593099) as SocketTextChannel; //gets channel to send message in
-
             string s = "***__Angel Commands__***" +
             "\n```yaml\n!slap @user\n!heal @user\n```";
-            await channel.SendMessageAsync(s);
+            await ReplyAsync(s);
         }
 
         [Command("archanglehelp")]
         public async Task ArchAngelCMD()
         {
-            var channel = CommandHandler._discord.GetChannel(703684513502593099) as SocketTextChannel; //gets channel to send message in
-
             string s = "***__ArchAngel Commands__***" +
             "\n```yaml\n!judge @user\n!sacrifice @user\n```";
-            await channel.SendMessageAsync(s);
+            await ReplyAsync(s);
         }
 
         [Command("music")]

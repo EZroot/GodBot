@@ -105,7 +105,7 @@ namespace AshBot.Services
             //-1
             if (msg.Content.Contains("warrior") || msg.Content.Contains("fag") || msg.Content.Contains("gay") || msg.Content.Contains("bitch") || msg.Content.Contains("omg") || msg.Content.Contains("omfg") || msg.Content.Contains("fk") || msg.Content.Contains("shit"))
             {
-                userdata.LoseXP(12);
+                userdata.LoseXP(22);
             }
             //-5
             if (msg.Content.Contains("gay") || msg.Content.Contains("autism") || msg.Content.Contains("autistic") || msg.Content.Contains("retard") || msg.Content.Contains("retarded") || msg.Content.Contains("dick"))
@@ -115,27 +115,37 @@ namespace AshBot.Services
             //-50
             if (msg.Content.Contains("goddammit") || msg.Content.Contains("god damn") || msg.Content.Contains("god dam") || msg.Content.Contains("goddam") || msg.Content.Contains("goddamn"))
             {
-                userdata.LoseXP(12);
+                userdata.LoseXP(22);
             }
             if (msg.Content.Contains("Warrior") || msg.Content.Contains("Fag") || msg.Content.Contains("Gay") || msg.Content.Contains("Bitch") || msg.Content.Contains("Omg") || msg.Content.Contains("Fuck") || msg.Content.Contains("fuck") || msg.Content.Contains("shit") || msg.Content.Contains("ass"))
             {
-                userdata.LoseXP(12);
+                userdata.LoseXP(22);
             }
 
             //5
-            if (msg.Content.Contains("boi") || msg.Content.Contains("no u") || msg.Content.Contains("aliens") || msg.Content.Contains("alien") || msg.Content.Contains("wifi") || msg.Content.Contains("space") || msg.Content.Contains("elon") || msg.Content.Contains("rocket") || msg.Content.Contains("good") || msg.Content.Contains("games") || msg.Content.Contains("thankfully") || msg.Content.Contains("beautifully") || msg.Content.Contains("beautiful") || msg.Content.Contains("cute") || msg.Content.Contains("trap") || msg.Content.Contains("christian") || msg.Content.Contains("amen") || msg.Content.Contains("holy"))
+            if (msg.Content.Contains("boi") || msg.Content.Contains("like") || msg.Content.Contains("wanna") || msg.Content.Contains("ty") || msg.Content.Contains("boi") || msg.Content.Contains("no u") || msg.Content.Contains("aliens") || msg.Content.Contains("alien") || msg.Content.Contains("wifi") || msg.Content.Contains("space") || msg.Content.Contains("elon") || msg.Content.Contains("rocket") || msg.Content.Contains("good") || msg.Content.Contains("thankfully") || msg.Content.Contains("beautifully") || msg.Content.Contains("beautiful") || msg.Content.Contains("cute") || msg.Content.Contains("trap") || msg.Content.Contains("christian") || msg.Content.Contains("amen") || msg.Content.Contains("holy"))
             {
-                userdata.AddXP(24);
+
+                if (userdata.Username == "ornox")
+                { userdata.AddXP(5); }
+                else
+                    userdata.AddXP(24);
             }
             //10
-            if (msg.Content.Contains("love") || msg.Content.Contains("thanks") || msg.Content.Contains("thank you") || msg.Content.Contains("thank u"))
+            if (msg.Content.Contains("appreciate") || msg.Content.Contains("thanks") || msg.Content.Contains("thank you") || msg.Content.Contains("thank u"))
             {
-                userdata.AddXP(82);
+                if (userdata.Username == "ornox")
+                { userdata.AddXP(5); }
+                else
+                    userdata.AddXP(32);
             }
             //20
-            if (msg.Content.Contains("i love you") || msg.Content.Contains("praise the sun") || msg.Content.Contains("Praise the sun"))
+            if (msg.Content.Contains("of course") || msg.Content.Contains("praise the sun") || msg.Content.Contains("Praise the sun"))
             {
-                userdata.AddXP(113);
+                if (userdata.Username == "ornox")
+                { userdata.AddXP(5); }
+                else
+                    userdata.AddXP(53);
             }
 
             //Level Update
