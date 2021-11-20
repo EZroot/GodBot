@@ -1,2 +1,2 @@
-# AshBot
- Ashen One
+# GodBot
+ Judgement day.
